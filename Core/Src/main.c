@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <string.h>
 #include "main.h"
 #include "spi.h"
 #include "usart.h"
@@ -25,7 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lcd.h"
-#include "sd_spi_base.h"
+#include "sd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -92,10 +93,23 @@ int main(void)
   MX_USART2_UART_Init();
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
+  uint32_t NumberBack = 0;
     LCD_Init(BLACK);
     LCD_ShowString(30,0,"SPI mode SD card test",WHITE,BLACK,16,1);
 
-    sd_InitModeSPI();
+    uint8_t i = 0;
+    while (SD_Init() != 0) {
+        LCD_ShowString(30,16 + 24*i,"No SD Card",WHITE,BLACK,24,1);
+        i++;
+        HAL_Delay(2000);
+    }
+    LCD_ShowString(30,16,"SD Init success",WHITE,BLACK,16,1);
+
+    //逻辑0扇区的物理扇区号
+    NumberBack = SD_GetLogic0();
+    LCD_ShowString(30,16*2,"Number:",WHITE,BLACK,16,1);
+    LCD_ShowHexNum(30 + 8* strlen("NUmber"),16*2,NumberBack,8,WHITE,BLACK,16,1 );
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -14,9 +14,6 @@ set(CMAKE_ASM_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_ASM
-  "ARM_MATH_CM4"
-  "ARM_MATH_MATRIX_CHECK"
-  "ARM_MATH_ROUNDING"
   "DEBUG"
   "STM32L476xx"
   "USE_HAL_DRIVER"
@@ -24,8 +21,8 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/LCD_240_280/Inc"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Core/Inc"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"

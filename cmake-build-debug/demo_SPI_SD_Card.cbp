@@ -24,14 +24,11 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DARM_MATH_CM4"/>
-					<Add option="-DARM_MATH_MATRIX_CHECK"/>
-					<Add option="-DARM_MATH_ROUNDING"/>
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32L476xx"/>
-					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/LCD_240_280/Inc"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Core/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>
@@ -58,14 +55,11 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DARM_MATH_CM4"/>
-					<Add option="-DARM_MATH_MATRIX_CHECK"/>
-					<Add option="-DARM_MATH_ROUNDING"/>
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32L476xx"/>
-					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/LCD_240_280/Inc"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Core/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>

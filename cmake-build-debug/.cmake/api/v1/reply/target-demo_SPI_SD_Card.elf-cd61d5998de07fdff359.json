@@ -13,7 +13,6 @@
 			"add_executable",
 			"add_link_options",
 			"add_compile_options",
-			"add_compile_definitions",
 			"add_definitions",
 			"include_directories"
 		],
@@ -35,12 +34,6 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 24,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
 				"line" : 63,
 				"parent" : 0
 			},
@@ -54,12 +47,6 @@
 				"command" : 1,
 				"file" : 0,
 				"line" : 65,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 23,
 				"parent" : 0
 			},
 			{
@@ -89,17 +76,11 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 22,
-				"parent" : 0
-			},
-			{
-				"command" : 4,
-				"file" : 0,
 				"line" : 57,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 0,
 				"line" : 52,
 				"parent" : 0
@@ -115,105 +96,85 @@
 					"fragment" : "-std=gnu11 -fdiagnostics-color=always"
 				},
 				{
-					"backtrace" : 6,
-					"fragment" : "-mfloat-abi=hard"
-				},
-				{
-					"backtrace" : 6,
-					"fragment" : "-mfpu=fpv4-sp-d16"
-				},
-				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"fragment" : "-mcpu=cortex-m4"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"fragment" : "-mthumb"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"fragment" : "-mthumb-interwork"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-ffunction-sections"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-fdata-sections"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-fno-common"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-fmessage-length=0"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 8,
 					"fragment" : "-Og"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 8,
 					"fragment" : "-g"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 11,
-					"define" : "ARM_MATH_CM4"
-				},
-				{
-					"backtrace" : 11,
-					"define" : "ARM_MATH_MATRIX_CHECK"
-				},
-				{
-					"backtrace" : 11,
-					"define" : "ARM_MATH_ROUNDING"
-				},
-				{
-					"backtrace" : 12,
+					"backtrace" : 9,
 					"define" : "DEBUG"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 9,
 					"define" : "STM32L476xx"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 9,
 					"define" : "USE_HAL_DRIVER"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 13,
-					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"
-				},
-				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/LCD_240_280/Inc"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
+					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Core/Inc"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Device/ST/STM32L4xx/Include"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Include"
 				}
 			],
@@ -266,113 +227,93 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"backtrace" : 6,
-					"fragment" : "-mfloat-abi=hard"
-				},
-				{
-					"backtrace" : 6,
-					"fragment" : "-mfpu=fpv4-sp-d16"
-				},
-				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"fragment" : "-mcpu=cortex-m4"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"fragment" : "-mthumb"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"fragment" : "-mthumb-interwork"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-ffunction-sections"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-fdata-sections"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-fno-common"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"fragment" : "-fmessage-length=0"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 7,
 					"fragment" : "-x"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 7,
 					"fragment" : "assembler-with-cpp"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 8,
 					"fragment" : "-Og"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 8,
 					"fragment" : "-g"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 11,
-					"define" : "ARM_MATH_CM4"
-				},
-				{
-					"backtrace" : 11,
-					"define" : "ARM_MATH_MATRIX_CHECK"
-				},
-				{
-					"backtrace" : 11,
-					"define" : "ARM_MATH_ROUNDING"
-				},
-				{
-					"backtrace" : 12,
+					"backtrace" : 9,
 					"define" : "DEBUG"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 9,
 					"define" : "STM32L476xx"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 9,
 					"define" : "USE_HAL_DRIVER"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 13,
-					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"
-				},
-				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/LCD_240_280/Inc"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
+					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/SD_Driver/Inc"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Core/Inc"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Device/ST/STM32L4xx/Include"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 10,
 					"path" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Include"
 				}
 			],
@@ -394,41 +335,31 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-mfloat-abi=hard",
-				"role" : "flags"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "-mfpu=fpv4-sp-d16",
-				"role" : "flags"
-			},
-			{
-				"backtrace" : 3,
 				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/demo_SPI_SD_Card.map",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-mcpu=cortex-m4",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-mthumb",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-mthumb-interwork",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 5,
+				"backtrace" : 4,
 				"fragment" : "-T",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 5,
+				"backtrace" : 4,
 				"fragment" : "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/STM32L476RGTX_FLASH.ld",
 				"role" : "flags"
 			}
