@@ -1,0 +1,27 @@
+"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/mingw64/bin/mingw32-make.exe" "-DCMAKE_C_COMPILER=C:/Program Files/mingw64/bin/gcc.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/mingw64/bin/g++.exe" -G "CodeBlocks - MinGW Makefiles" -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card -B C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done (0.3s)
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= C:/Program Files/mingw64/bin/gcc.exe
+CMAKE_CXX_COMPILER= C:/Program Files/mingw64/bin/g++.exe
+
+-- The C compiler identification is GNU 10.3.1
+-- The CXX compiler identification is GNU 10.3.1
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Program Files/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Minimal optimization, debug info included
+-- Configuring done (4.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug
