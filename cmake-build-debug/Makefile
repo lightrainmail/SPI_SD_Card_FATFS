@@ -904,6 +904,174 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s
 .PHONY : Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s
 
+FATFS/App/fatfs.obj: FATFS/App/fatfs.c.obj
+.PHONY : FATFS/App/fatfs.obj
+
+# target to build an object file
+FATFS/App/fatfs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+.PHONY : FATFS/App/fatfs.c.obj
+
+FATFS/App/fatfs.i: FATFS/App/fatfs.c.i
+.PHONY : FATFS/App/fatfs.i
+
+# target to preprocess a source file
+FATFS/App/fatfs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.i
+.PHONY : FATFS/App/fatfs.c.i
+
+FATFS/App/fatfs.s: FATFS/App/fatfs.c.s
+.PHONY : FATFS/App/fatfs.s
+
+# target to generate assembly for a file
+FATFS/App/fatfs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.s
+.PHONY : FATFS/App/fatfs.c.s
+
+FATFS/Target/user_diskio.obj: FATFS/Target/user_diskio.c.obj
+.PHONY : FATFS/Target/user_diskio.obj
+
+# target to build an object file
+FATFS/Target/user_diskio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+.PHONY : FATFS/Target/user_diskio.c.obj
+
+FATFS/Target/user_diskio.i: FATFS/Target/user_diskio.c.i
+.PHONY : FATFS/Target/user_diskio.i
+
+# target to preprocess a source file
+FATFS/Target/user_diskio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.i
+.PHONY : FATFS/Target/user_diskio.c.i
+
+FATFS/Target/user_diskio.s: FATFS/Target/user_diskio.c.s
+.PHONY : FATFS/Target/user_diskio.s
+
+# target to generate assembly for a file
+FATFS/Target/user_diskio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.s
+.PHONY : FATFS/Target/user_diskio.c.s
+
+Middlewares/Third_Party/FatFs/src/diskio.obj: Middlewares/Third_Party/FatFs/src/diskio.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.obj
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/diskio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.c.obj
+
+Middlewares/Third_Party/FatFs/src/diskio.i: Middlewares/Third_Party/FatFs/src/diskio.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/diskio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.c.i
+
+Middlewares/Third_Party/FatFs/src/diskio.s: Middlewares/Third_Party/FatFs/src/diskio.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/diskio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.c.s
+
+Middlewares/Third_Party/FatFs/src/ff.obj: Middlewares/Third_Party/FatFs/src/ff.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.obj
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/ff.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.c.obj
+
+Middlewares/Third_Party/FatFs/src/ff.i: Middlewares/Third_Party/FatFs/src/ff.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/ff.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.c.i
+
+Middlewares/Third_Party/FatFs/src/ff.s: Middlewares/Third_Party/FatFs/src/ff.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/ff.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.c.s
+
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.obj: Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.obj
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.i: Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i
+
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.s: Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
+
+Middlewares/Third_Party/FatFs/src/option/cc936.obj: Middlewares/Third_Party/FatFs/src/option/cc936.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.obj
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/option/cc936.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.c.obj
+
+Middlewares/Third_Party/FatFs/src/option/cc936.i: Middlewares/Third_Party/FatFs/src/option/cc936.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/option/cc936.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.c.i
+
+Middlewares/Third_Party/FatFs/src/option/cc936.s: Middlewares/Third_Party/FatFs/src/option/cc936.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/option/cc936.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.c.s
+
+Middlewares/Third_Party/FatFs/src/option/syscall.obj: Middlewares/Third_Party/FatFs/src/option/syscall.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.obj
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/option/syscall.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.c.obj
+
+Middlewares/Third_Party/FatFs/src/option/syscall.i: Middlewares/Third_Party/FatFs/src/option/syscall.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/option/syscall.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.c.i
+
+Middlewares/Third_Party/FatFs/src/option/syscall.s: Middlewares/Third_Party/FatFs/src/option/syscall.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/option/syscall.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1010,6 +1178,27 @@ help:
 	@echo ... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.obj
 	@echo ... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.i
 	@echo ... Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.s
+	@echo ... FATFS/App/fatfs.obj
+	@echo ... FATFS/App/fatfs.i
+	@echo ... FATFS/App/fatfs.s
+	@echo ... FATFS/Target/user_diskio.obj
+	@echo ... FATFS/Target/user_diskio.i
+	@echo ... FATFS/Target/user_diskio.s
+	@echo ... Middlewares/Third_Party/FatFs/src/diskio.obj
+	@echo ... Middlewares/Third_Party/FatFs/src/diskio.i
+	@echo ... Middlewares/Third_Party/FatFs/src/diskio.s
+	@echo ... Middlewares/Third_Party/FatFs/src/ff.obj
+	@echo ... Middlewares/Third_Party/FatFs/src/ff.i
+	@echo ... Middlewares/Third_Party/FatFs/src/ff.s
+	@echo ... Middlewares/Third_Party/FatFs/src/ff_gen_drv.obj
+	@echo ... Middlewares/Third_Party/FatFs/src/ff_gen_drv.i
+	@echo ... Middlewares/Third_Party/FatFs/src/ff_gen_drv.s
+	@echo ... Middlewares/Third_Party/FatFs/src/option/cc936.obj
+	@echo ... Middlewares/Third_Party/FatFs/src/option/cc936.i
+	@echo ... Middlewares/Third_Party/FatFs/src/option/cc936.s
+	@echo ... Middlewares/Third_Party/FatFs/src/option/syscall.obj
+	@echo ... Middlewares/Third_Party/FatFs/src/option/syscall.i
+	@echo ... Middlewares/Third_Party/FatFs/src/option/syscall.s
 .PHONY : help
 
 

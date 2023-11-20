@@ -529,6 +529,104 @@ CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.s"
 	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c.s
 
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/flags.make
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/App/fatfs.c
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj -MF CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\App\fatfs.c.obj.d -o CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\App\fatfs.c.obj -c C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\App\fatfs.c
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.i"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\App\fatfs.c > CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\App\fatfs.c.i
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.s"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\App\fatfs.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\App\fatfs.c.s
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/flags.make
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target/user_diskio.c
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj -MF CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\Target\user_diskio.c.obj.d -o CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\Target\user_diskio.c.obj -c C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\Target\user_diskio.c
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.i"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\Target\user_diskio.c > CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\Target\user_diskio.c.i
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.s"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\Target\user_diskio.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\FATFS\Target\user_diskio.c.s
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/flags.make
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/diskio.c
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj -MF CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\diskio.c.obj.d -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\diskio.c.obj -c C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\diskio.c
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\diskio.c > CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\diskio.c.i
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\diskio.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\diskio.c.s
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/flags.make
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff.c
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj -MF CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff.c.obj.d -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff.c.obj -c C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\ff.c
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\ff.c > CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff.c.i
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\ff.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff.c.s
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/flags.make
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj -MF CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c.obj.d -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c.obj -c C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c > CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c.i
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c.s
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/flags.make
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/cc936.c
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj -MF CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\cc936.c.obj.d -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\cc936.c.obj -c C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\option\cc936.c
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.i"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\option\cc936.c > CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\cc936.c.i
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.s"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\option\cc936.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\cc936.c.s
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/flags.make
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/syscall.c
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: CMakeFiles/demo_SPI_SD_Card.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj -MF CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\syscall.c.obj.d -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\syscall.c.obj -c C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\option\syscall.c
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\option\syscall.c > CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\syscall.c.i
+
+CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s"
+	C:\PROGRA~1\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src\option\syscall.c -o CMakeFiles\demo_SPI_SD_Card.elf.dir\Middlewares\Third_Party\FatFs\src\option\syscall.c.s
+
 # Object files for target demo_SPI_SD_Card.elf
 demo_SPI_SD_Card_elf_OBJECTS = \
 "CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj" \
@@ -563,7 +661,14 @@ demo_SPI_SD_Card_elf_OBJECTS = \
 "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj" \
 "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj" \
 "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj" \
-"CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj"
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj" \
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj" \
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj" \
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj" \
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj" \
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj" \
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj" \
+"CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj"
 
 # External object files for target demo_SPI_SD_Card.elf
 demo_SPI_SD_Card_elf_EXTERNAL_OBJECTS =
@@ -601,9 +706,16 @@ demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_
 demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj
 demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
 demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj
+demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj
+demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj
 demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/build.make
 demo_SPI_SD_Card.elf: CMakeFiles/demo_SPI_SD_Card.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C executable demo_SPI_SD_Card.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking C executable demo_SPI_SD_Card.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo_SPI_SD_Card.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/demo_SPI_SD_Card.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/demo_SPI_SD_Card.bin"

@@ -11,10 +11,10 @@
 				<Option working_dir="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="demo_SPI_SD_Card.elf">
@@ -34,6 +34,9 @@
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Device/ST/STM32L4xx/Include"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/App"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src"/>
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -42,10 +45,10 @@
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo_SPI_SD_Card.elf"/>
-					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo_SPI_SD_Card.elf"/>
+					<CompileFile command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="demo_SPI_SD_Card.elf/fast">
@@ -65,6 +68,9 @@
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Device/ST/STM32L4xx/Include"/>
 					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/App"/>
+					<Add directory="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src"/>
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -73,30 +79,30 @@
 					<Add directory="c:\program files\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo_SPI_SD_Card.elf/fast"/>
-					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo_SPI_SD_Card.elf/fast"/>
+					<CompileFile command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Program Files/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -449,6 +455,48 @@
 			<Option target="demo_SPI_SD_Card.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/App/fatfs.c">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/App/fatfs.h">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target/ffconf.h">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target/user_diskio.c">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target/user_diskio.h">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/diskio.c">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/diskio.h">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff.c">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff.h">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/integer.h">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/cc936.c">
+			<Option target="demo_SPI_SD_Card.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/syscall.c">
 			<Option target="demo_SPI_SD_Card.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/STM32L476RGTX_FLASH.ld">

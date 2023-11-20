@@ -34,7 +34,7 @@ uint8_t SD_GetResponse(uint16_t response) {
  *                 1 退出时失能SD卡片选
  * @retval temp 返回SD卡响应*/
 uint8_t SD_WriteCommand(uint8_t cmd,uint32_t argument,uint8_t crc,uint8_t reset) {
-    uint8_t temp;
+    uint8_t temp = 0xFF;
     uint8_t i;
 
     //拉高SD,并增加8个时钟确保上次操作完成
@@ -51,19 +51,27 @@ uint8_t SD_WriteCommand(uint8_t cmd,uint32_t argument,uint8_t crc,uint8_t reset)
     sd_interface_transmit_receive_data(argument);
     sd_interface_transmit_receive_data(crc);
 
-    i = 0;
-    do {
-        temp = sd_interface_transmit_receive_data(0xFF);    //接收响应
-        i ++;
-        if(i > 200) {   //超时则退出
+//    i = 0;
+//    do {
+//        temp = sd_interface_transmit_receive_data(0xFF);    //接收响应
+//        i ++;
+//        if(i > 200) {   //超时则退出
+//            break;
+//        }
+//    } while (temp == 0xFF); //响应为空则再次接收响应,直到不为空为止
+
+    //do while循环改为for循环,直到接收到响应为止
+    for(i = 0;temp == 0xFF;i++) {
+        temp = sd_interface_transmit_receive_data(0xFF);    //交换字节,交换响应
+        if(i > 200) {   //循环过多次则直接退出
             break;
         }
-    } while (temp == 0xFF); //响应为空则再次接收响应,知道不为空为止
+    }
 
     //根据要求保持或失能SD卡
     if(reset) {
         SD_CS_Set();
-//        sd_interface_transmit_receive_data(0xFF);   //增加8个时钟确保本次操作完成
+        sd_interface_transmit_receive_data(0xFF);   //取消片选之后，需要再额外发送8个时钟信号，结束本次操作。
     }
 
     return temp;
@@ -74,17 +82,17 @@ uint8_t SD_WriteCommand(uint8_t cmd,uint32_t argument,uint8_t crc,uint8_t reset)
  *        sector 扇区地址(物理扇区)
  *        len 字节数
  * @retval */
-uint8_t SD_ReadBlock(uint8_t *rxbuff,uint32_t sector,uint16_t len) {
+uint8_t SD_ReadBlock(uint8_t *rxbuff, uint32_t sector_addr, uint16_t len) {
     uint8_t temp;
     uint16_t i;
 
     //除SDHC外,其他卡均需要扇区地址装换成字节地址
     if(SD_Type != V2HC) {
-        sector = sector << 9;
+        sector_addr = sector_addr << 9;
     }
 
     //读命令
-    temp = SD_WriteCommand(17,sector,0,1);
+    temp = SD_WriteCommand(SDCard_CMD17, sector_addr, 0, 1);
     if(temp != 0x00) {
         return temp;
     }
@@ -99,11 +107,11 @@ uint8_t SD_ReadBlock(uint8_t *rxbuff,uint32_t sector,uint16_t len) {
 
     for(i = 512;i > 0;i--) {
         *rxbuff = sd_interface_transmit_receive_data(0xFF); //用空白信息交换有效信息
-        rxbuff ++ ; //接收地址自增
+        rxbuff++ ; //接收地址自增
     }
 
-    sd_interface_transmit_receive_data(0xFF);
     sd_interface_transmit_receive_data(0xFF);   //丢弃两个CRC
+    sd_interface_transmit_receive_data(0xFF);
 
     //结束本次传输
     SD_CS_Set();
@@ -112,6 +120,7 @@ uint8_t SD_ReadBlock(uint8_t *rxbuff,uint32_t sector,uint16_t len) {
 
     return 0;
 }
+
 
 /* @brief 获取逻辑0扇区的物理扇区号*/
 uint32_t SD_GetLogic0(void) {
@@ -157,10 +166,10 @@ uint8_t SD_Init(void) {
     SD_CS_Set();
 
     //为适应MMC卡要求时钟 < 400KHz,暂用256分频
-//    SD_SPI3_Init();
+    SD_SPI3_Init();
 
     //延迟100ms等卡上电
-//    sd_interface_delayms(100);
+    sd_interface_delayms(100);
 
     //输出卡要求的至少74个初始化脉冲,并要求CS为高电平
     for(i = 0;i < 10;i++) {
@@ -170,9 +179,9 @@ uint8_t SD_Init(void) {
     //发送CMD0,进入SPI模式
     i = 0;
     do {
-        temp = SD_WriteCommand(0,0,0x95,1);
+        temp = SD_WriteCommand(SDCard_CMD0,0,0x95,1); //CMD0 = 0 复位卡,进入IDLE(闲置)状态
         i++;
-    } while ((temp != 0x01) && (i < 200));  //等待回应0x01
+    } while ((temp != 0x01) && (i < 200));  //等待回应0x01,返回0x01就代表复位成功
 
     if(temp == 200) {
         return 1;   //失败退出
@@ -181,7 +190,7 @@ uint8_t SD_Init(void) {
 
     /* 下面进入SD卡,获取卡的版本信息*/
     SD_CS_Clr();
-    temp = SD_WriteCommand(8,0x1AA,0x87,1);
+    temp = SD_WriteCommand(SDCard_CMD8,0x1AA,0x87,1);  //CMD8 = 8 argument = 0x1AA,1表示电压范围2.7-3.6V AA是固定的check pattern
 
     if(temp == 0x05) {
         //v1.0版和MMC
@@ -193,11 +202,11 @@ uint8_t SD_Init(void) {
 
         i = 0;
         do {
-            temp = SD_WriteCommand(55,0,0,1);   //发送CMD55,应返回0x01
+            temp = SD_WriteCommand(SDCard_CMD55,0,0,1);   //发送CMD55,应返回0x01
             if(temp == 0xFF) {
                 return temp;    //返回0xFF表明无卡,退出
             }
-            temp = SD_WriteCommand(41,0,0,1);   //再发送CMD41,应返回0x00
+            temp = SD_WriteCommand(SDCard_CMD41,0,0,1);   //再发送ACMD41 = 41,应返回0x00
             i++;
             //回应正确,则卡类型预设成立
         } while ((temp != 0x00) && (i < 400));
@@ -219,7 +228,7 @@ uint8_t SD_Init(void) {
             SD_Type = MMC;
         }
 
-        MX_SPI3_Init(); //SPI正常初始化,16分频
+        MX_SPI3_Init(); //SPI正常初始化,8分频
 
         sd_interface_transmit_receive_data(0xFF);   //输出8个时钟确保前次操作结束
 
@@ -230,12 +239,11 @@ uint8_t SD_Init(void) {
         }
 
         //设置扇区宽度
-        temp = SD_WriteCommand(16,512,0x95,1);
+        temp = SD_WriteCommand(SDCard_CMD16,512,0x95,1);   //设定数据块大小为512字节
         if(temp != 0x00) {
             return temp;    //错误返回
         }
-    }
-    else if(temp == 0x01) {
+    } else if(temp == 0x01) {
         //V2.0和V2.0HC版
         //忽略V2.0卡的后续4字节
         sd_interface_transmit_receive_data(0xFF);
@@ -247,34 +255,37 @@ uint8_t SD_Init(void) {
 
         sd_interface_transmit_receive_data(0xFF);   //输出8个时钟确保前次操作结束
 
+        //在2.0版本卡的基础下,循环发送CMD55和CMD41,等待初始化成功,如果CMD41返回0就表示卡复位成功
         i=0;
         do {
-            temp = SD_WriteCommand(55,0,0,1);
+            temp = SD_WriteCommand(SDCard_CMD55,0,0,1);
             if(temp != 0x01) {
                 return temp;	//错误返回
             }
 
-            temp = SD_WriteCommand(41,0x40000000,0,1);
+            temp = SD_WriteCommand(SDCard_CMD41,0x40000000,0,1);
             if(i > 200)
               return temp;  //超时返回
         } while (temp != 0);
 
-        temp=SD_WriteCommand(58,0,0,0);
+        //初始化成功后发送CMD58,判断是高速卡还是低速卡
+        temp=SD_WriteCommand(SDCard_CMD58,0,0,0);  //CMD58 = 58,获取卡的容量,命令返回值为0则代表执行成功
         if(temp != 0x00) {
             SD_CS_Set();  //失能SD
             return temp;  //错误返回
         }
 
-        //接收OCR信息
-        buff[0]=sd_interface_transmit_receive_data(0xff);
-        buff[1]=sd_interface_transmit_receive_data(0xff);
-        buff[2]=sd_interface_transmit_receive_data(0xff);
-        buff[3]=sd_interface_transmit_receive_data(0xff);
+        //接收4个字节OCR信息
+        buff[0]=sd_interface_transmit_receive_data(0xff);   //31-24
+        buff[1]=sd_interface_transmit_receive_data(0xff);   //23-16
+        buff[2]=sd_interface_transmit_receive_data(0xff);   //15-8
+        buff[3]=sd_interface_transmit_receive_data(0xff);   //7-0
 
         SD_CS_Set();
 
         sd_interface_transmit_receive_data(0xff); //输出8个时钟确保前次操作结束
 
+        //操作条件寄存器中的第30位指示了是高速卡还是低速卡,为1就是SDHC,为0就是SDSC
         if(buff[0] & 0x40) {
             SD_Type = V2HC;
         }
@@ -282,10 +293,13 @@ uint8_t SD_Init(void) {
             SD_Type = V2;
         }
 
+        //SD卡恢复正常速度
         MX_SPI3_Init();
     }
 
     return temp;
 }
+
+
 
 

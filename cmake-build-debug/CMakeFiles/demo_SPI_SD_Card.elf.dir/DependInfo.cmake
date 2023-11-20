@@ -28,6 +28,9 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Device/ST/STM32L4xx/Include"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/CMSIS/Include"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/App"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src"
   )
 
 # The set of dependency files which are needed:
@@ -64,6 +67,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj.d"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj.d"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj.d"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/App/fatfs.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj.d"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/FATFS/Target/user_diskio.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj.d"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/diskio.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj.d"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj.d"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj.d"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/cc936.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj.d"
+  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/syscall.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

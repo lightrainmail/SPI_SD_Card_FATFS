@@ -1,23 +1,5 @@
 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj: \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Src\main.c \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_newlib_version.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\config.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\ieeefp.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\features.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\reent.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_types.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_types.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_default_types.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\lock.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\cdefs.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Inc/main.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Inc/stm32l4xx_hal_conf.h \
@@ -28,6 +10,9 @@ CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj: \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\CMSIS\Include/core_cm4.h \
  c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdint.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_default_types.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\features.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_newlib_version.h \
  c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_intsup.h \
  c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_stdint.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\CMSIS\Include/cmsis_version.h \
@@ -36,6 +21,7 @@ CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj: \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\CMSIS\Include/mpu_armv7.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\CMSIS\Device\ST\STM32L4xx\Include/system_stm32l4xx.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/Legacy/stm32_hal_legacy.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal_rcc_ex.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal_gpio.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal_gpio_ex.h \
@@ -51,6 +37,27 @@ CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj: \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal_spi_ex.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal_uart.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal_uart_ex.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\App/fatfs.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src/ff.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src/integer.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\Target/ffconf.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\ieeefp.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\config.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\reent.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_types.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_types.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\lock.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\cdefs.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src/ff_gen_drv.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src/diskio.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Middlewares\Third_Party\FatFs\src/ff.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\FATFS\Target/user_diskio.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Inc/spi.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Inc/main.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Inc/usart.h \
@@ -73,4 +80,8 @@ CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj: \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\LCD_240_280\Inc/lcd_interface.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\LCD_240_280\Inc/lcd.h \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\SD_Driver\Inc/sd.h \
- C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\SD_Driver\Inc/sd_interface.h
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\SD_Driver\Inc/sd_interface.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h
