@@ -7,6 +7,10 @@
 
 #include "sd_interface.h"   //包含接口文件
 
+#define u8      uint8_t
+#define u16     uint16_t
+#define u32     uint32_t
+
 
 //卡类型
 #define MMC     0
@@ -42,6 +46,14 @@
 
 #define SDCard_CMD58 58 //命令58，读OCR信息
 
+
+//函数声明,来自华为云,开发者https://bbs.huaweicloud.com/blogs/383913
+u8 SDCardReadWriteOneByte(u8 data);                     //底层接口，SPI读写字节函数
+void SDCardReadData(u8*buf,u32 sector,u32 cnt);		    //读块(扇区)
+void SDCardWriteData(u8*buf,u32 sector,u32 cnt);		//写块(扇区)
+u8 SDCardSendData(u8*buf,u8 cmd);  						//发送数据包
+u8 SDCardRecvData(u8*buf,u16 len);						//接收数据包
+u32 GetSDCardSectorCount(void);   		 			    //读扇区数
 
 
 //控制SD_CS引脚电平

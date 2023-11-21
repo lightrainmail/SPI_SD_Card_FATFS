@@ -51,22 +51,22 @@ uint8_t SD_WriteCommand(uint8_t cmd,uint32_t argument,uint8_t crc,uint8_t reset)
     sd_interface_transmit_receive_data(argument);
     sd_interface_transmit_receive_data(crc);
 
-//    i = 0;
-//    do {
-//        temp = sd_interface_transmit_receive_data(0xFF);    //接收响应
-//        i ++;
-//        if(i > 200) {   //超时则退出
-//            break;
-//        }
-//    } while (temp == 0xFF); //响应为空则再次接收响应,直到不为空为止
-
-    //do while循环改为for循环,直到接收到响应为止
-    for(i = 0;temp == 0xFF;i++) {
-        temp = sd_interface_transmit_receive_data(0xFF);    //交换字节,交换响应
-        if(i > 200) {   //循环过多次则直接退出
+    i = 0;
+    do {
+        temp = sd_interface_transmit_receive_data(0xFF);    //接收响应
+        i ++;
+        if(i > 200) {   //超时则退出
             break;
         }
-    }
+    } while (temp == 0xFF); //响应为空则再次接收响应,直到不为空为止
+
+//    //do while循环改为for循环,直到接收到响应为止
+//    for(i = 0;temp == 0xFF;i++) {
+//        temp = sd_interface_transmit_receive_data(0xFF);    //交换字节,交换响应
+//        if(i > 200) {   //循环过多次则直接退出
+//            break;
+//        }
+//    }
 
     //根据要求保持或失能SD卡
     if(reset) {
@@ -301,5 +301,179 @@ uint8_t SD_Init(void) {
 }
 
 
+/*
+函数功能：SD卡底层接口,通过SPI时序向SD卡读写一个字节
+函数参数：data是要写入的数据
+返 回 值：读到的数据
+*/
+uint8_t SDCardReadWriteOneByte(uint8_t DataTx)
+{		 
+    uint8_t DataRx;
+    DataRx = sd_interface_transmit_receive_data(DataTx);
+
+    return DataRx;
+}
+
+/*
+函数功能：从sd卡读取一个数据包的内容
+函数参数：
+				buf:数据缓存区
+				len:要读取的数据长度.
+返回值：
+			0,成功;其他,失败;
+*/
+uint8_t SDCardRecvData(uint8_t *buf,uint16_t len)
+{
+		while(SDCardReadWriteOneByte(0xFF)!=0xFE){}//等待SD卡发回数据起始令牌0xFE
+    while(len--)//开始接收数据
+    {
+        *buf=SDCardReadWriteOneByte(0xFF);
+        buf++;
+    }
+    //下面是2个伪CRC（dummy CRC）
+    SDCardReadWriteOneByte(0xFF);
+    SDCardReadWriteOneByte(0xFF);
+    return 0;//读取成功
+}
+
+/*
+函数功能：向sd卡写入一个数据包的内容 512字节
+函数参数：
+					buf 数据缓存区
+					cmd 指令
+返 回 值：0表示成功;其他值表示失败;
+*/
+uint8_t SDCardSendData(uint8_t*buf,uint8_t cmd)
+{	
+	uint16_t t;		  	  
+	while(SDCardReadWriteOneByte(0xFF)!=0xFF){}  //等待忙状态
+	SDCardReadWriteOneByte(cmd);
+	if(cmd!=0xFD)//不是结束指令
+	{
+		  for(t=0;t<512;t++)SDCardReadWriteOneByte(buf[t]);//提高速度,减少函数传参时间
+	    SDCardReadWriteOneByte(0xFF); //忽略crc
+	    SDCardReadWriteOneByte(0xFF);
+		  SDCardReadWriteOneByte(0xFF); //接收响应								  					    
+	}						 									  					    
+  return 0;//写入成功
+}
+
+/*
+函数功能：向SD卡发送一个命令
+函数参数：
+				uint8_t cmd   命令 
+				uint32_t arg  命令参数
+				uint8_t crc   crc校验值	
+返回值:SD卡返回的响应
+*/												  
+uint8_t SendSDCardCmd(uint8_t cmd, uint32_t arg, uint8_t crc)
+{
+	uint8_t r1;	
+	SD_CS_Set(); //取消上次片选
+ 	SDCardReadWriteOneByte(0xff);//提供额外的8个时钟
+	SD_CS_Clr(); //选中SD卡
+	while(SDCardReadWriteOneByte(0xFF)!=0xFF){};//等待成功
+
+	//发送数据
+	SDCardReadWriteOneByte(cmd | 0x40);//分别写入命令
+	SDCardReadWriteOneByte(arg >> 24);
+	SDCardReadWriteOneByte(arg >> 16);
+	SDCardReadWriteOneByte(arg >> 8);
+	SDCardReadWriteOneByte(arg);	  
+	SDCardReadWriteOneByte(crc); 
+	
+	if(cmd==SDCard_CMD12)SDCardReadWriteOneByte(0xff);//Skip a stuff byte when stop reading
+	do
+	{
+		r1=SDCardReadWriteOneByte(0xFF);
+	}while(r1&0x80);	  //等待响应，或超时退出
+	return r1;
+}
+
+/*
+函数功能：获取SD卡的总扇区数（扇区数）   
+返 回 值：
+				0表示容量检测出错，其他值表示SD卡的容量(扇区数/512字节)
+说   明：
+				每扇区的字节数必为512字节，如果不是512字节，则初始化不能通过.	
+*/
+uint32_t GetSDCardSectorCount(void)
+{
+    uint8_t csd[16];
+    uint32_t Capacity=0;  
+	  uint16_t csize;
+		//获取SD卡的CSD信息，包括容量和速度信息,存放CID的内存,至少16Byte
+		SendSDCardCmd(SDCard_CMD9,0,0x01);//发SDCard_CMD9命令，读CSD
+	  SDCardRecvData(csd,16);//接收16个字节的数据 
+		SD_CS_Set();//取消片选
+		SDCardReadWriteOneByte(0xff);//提供额外的8个时钟
+    if((csd[0]&0xC0)==0x40)  //SDHC卡，按照下面方式计算
+    {	
+			csize=csd[9]+(csd[8]<<8)+1;
+			Capacity=csize<<10;//得到扇区数	 		   
+    }
+    return Capacity;
+}
+
+/*
+函数功能：读SD卡
+函数参数：
+				buf:数据缓存区
+				sector:扇区
+				cnt:扇区数
+返回值:
+				0,ok;其他,失败.
+说  明：
+				SD卡一个扇区大小512字节
+*/
+void SDCardReadData(u8*buf,u32 sector,u32 cnt)
+{
+	u32 i=0;
+	if(cnt==1)
+	{
+		SendSDCardCmd(SDCard_CMD17,sector,0x01);//读扇区
+		SDCardRecvData(buf,512);			//接收512个字节
+	}
+	else
+	{
+		SendSDCardCmd(SDCard_CMD18,sector,0x01);//连续读命令
+		for(i=0;i<cnt;i++)
+		{
+			SDCardRecvData(buf,512);//接收512个字节
+			buf+=512;
+		}
+		SendSDCardCmd(SDCard_CMD12,0,0x01);	//停止数据传输
+	}
+	SD_CS_Set();//取消片选
+ 	SDCardReadWriteOneByte(0xff);//提供额外的8个时钟();
+}
+
+/*
+函数功能：向SD卡写数据
+函数参数：
+				buf:数据缓存区
+				sector:起始扇区
+				cnt:扇区数
+说  明：
+				SD卡一个扇区大小512字节
+*/
+void SDCardWriteData(u8*buf,u32 sector,u32 cnt) {
+    u32 i = 0;
+    if (cnt == 1) {
+        SendSDCardCmd(SDCard_CMD24, sector, 0x01);//写单个扇区
+        SDCardSendData(buf, 0xFE);//写512个字节
+    } else {
+        SendSDCardCmd(SDCard_CMD55, 0, 0x01);
+        SendSDCardCmd(SDCard_CMD23, cnt, 0x01);   //设置多扇区写入前预先擦除N个block
+        SendSDCardCmd(SDCard_CMD25, sector, 0x01);//写多个扇区
+        for (i = 0; i < cnt; i++) {
+            SDCardSendData(buf, 0xFC);//写512个字节
+            buf += 512;
+        }
+        SDCardSendData(0, 0xFD);//写结束指令
+    }
+    SD_CS_Set();
+    SDCardReadWriteOneByte(0xff);//提供额外的8个时钟
+}
 
 

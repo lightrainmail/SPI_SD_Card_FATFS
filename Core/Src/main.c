@@ -112,12 +112,34 @@ int main(void)
     LCD_ShowString(30,16*2,"Number:",BLACK,WHITE,16,1);
     LCD_ShowHexNum(30 + 8* strlen("NUmber:"),16*2,NumberBack,8,BLACK,WHITE,16,1 );
 
+    //获取扇区总数
+    uint32_t SectorNum = 0;
+    SectorNum = GetSDCardSectorCount(); //SectorNum = 15564800 SD卡总容量为7.421875GB
+
+    //向SD卡写入数据
+    uint8_t Buff[512];
+    for(uint16_t j = 0;j < 512;j++) {
+        Buff[j] = 2*j;
+    }
+    SDCardWriteData(Buff,0x00000000,1);
+
+    uint8_t RxBuff[512];
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+      //从SD卡读取数据
+      for(uint16_t m = 0;m < 512 ;m++) {
+          RxBuff[m] = 0;
+      }
+        SDCardReadData(RxBuff,0x00000000,1);
+        LCD_ShowIntNum(30,16*3,RxBuff[0],3,BLACK,WHITE,16);
+        LCD_ShowIntNum(30 + 5*8,16*3,RxBuff[1],3,BLACK,WHITE,16);
+        LCD_ShowIntNum(30 + 10*8,16*3,RxBuff[2],3,BLACK,WHITE,16);
+        LCD_ShowIntNum(30 + 15*8,16*3,RxBuff[3],3,BLACK,WHITE,16);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
