@@ -2,10 +2,6 @@
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
-FATFS.IPParameters=_CODE_PAGE,_USE_LFN,_VOLUMES
-FATFS._CODE_PAGE=936
-FATFS._USE_LFN=2
-FATFS._VOLUMES=2
 File.Version=6
 GPIO.groupedBy=Group By Peripherals
 KeepUserPlacement=false

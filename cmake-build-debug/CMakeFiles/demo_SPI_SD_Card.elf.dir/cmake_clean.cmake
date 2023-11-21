@@ -74,8 +74,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj.d"
   "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj"
   "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj.d"
-  "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj"
-  "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj.d"
   "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj"
   "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj.d"
   "demo_SPI_SD_Card.elf"

@@ -35,7 +35,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include <string.h>
 #include "ff_gen_drv.h"
-
+#include "sd.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 
@@ -72,7 +72,7 @@ Diskio_drvTypeDef  USER_Driver =
 /* Private functions ---------------------------------------------------------*/
 
 /**
-  * @brief  Initializes a Drive
+  * @brief  Initializes a Drive When use f_mount() function,USER_initialize() function will be run
   * @param  pdrv: Physical drive number (0..)
   * @retval DSTATUS: Operation status
   */
@@ -82,6 +82,12 @@ DSTATUS USER_initialize (
 {
   /* USER CODE BEGIN INIT */
     Stat = STA_NOINIT;
+
+    //SD Card init
+    if(SD_Init() == 0) {
+        Stat &= ~STA_NOINIT;
+    }
+
     return Stat;
   /* USER CODE END INIT */
 }
@@ -97,6 +103,10 @@ DSTATUS USER_status (
 {
   /* USER CODE BEGIN STATUS */
     Stat = STA_NOINIT;
+
+    //return SD state
+    Stat &= ~STA_NOINIT;
+
     return Stat;
   /* USER CODE END STATUS */
 }
@@ -117,6 +127,8 @@ DRESULT USER_read (
 )
 {
   /* USER CODE BEGIN READ */
+    SDCardReadData(buff,sector,count);
+
     return RES_OK;
   /* USER CODE END READ */
 }
@@ -139,6 +151,9 @@ DRESULT USER_write (
 {
   /* USER CODE BEGIN WRITE */
   /* USER CODE HERE */
+
+    SDCardWriteData((uint8_t *)buff,sector,count);
+
     return RES_OK;
   /* USER CODE END WRITE */
 }
@@ -160,6 +175,31 @@ DRESULT USER_ioctl (
 {
   /* USER CODE BEGIN IOCTL */
     DRESULT res = RES_ERROR;
+
+    switch (cmd) {
+        case CTRL_SYNC:
+            res = RES_OK;
+            break;
+
+        case GET_SECTOR_SIZE:
+            *(DWORD *)buff = 512;
+            break;
+
+        case GET_BLOCK_SIZE:
+            *(DWORD *)buff = 8;
+            res = RES_OK;
+            break;
+
+        case GET_SECTOR_COUNT:
+            *(DWORD *)buff = GetSDCardSectorCount();
+            res = RES_OK;
+            break;
+
+        default:
+            res = RES_ERROR;
+            break;
+    }
+
     return res;
   /* USER CODE END IOCTL */
 }

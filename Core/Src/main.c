@@ -59,7 +59,22 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void SD_TestFATFs(void) {
+    FATFS *fs;
+    FRESULT ret;
 
+    //apply malloc
+    fs = (FATFS *)malloc(sizeof(FATFS));
+
+
+    //mount SD device
+    ret = f_mount(fs,"0:",1);
+    if(ret) {
+        LCD_ShowString(30,0,"mount fail",BLACK,WHITE,16,1);
+    } else {
+        LCD_ShowString(30, 0, "mount OK", BLACK, WHITE, 16, 1);
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -95,35 +110,67 @@ int main(void)
   MX_SPI3_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-  uint32_t NumberBack = 0;
+//  uint32_t NumberBack = 0;
     LCD_Init(WHITE);
-    LCD_ShowString(30,0,"SPI mode SD card test",BLACK,WHITE,16,1);
+//    LCD_ShowString(30,0,"SPI mode SD card test",BLACK,WHITE,16,1);
+//
+//    uint8_t i = 0;
+//    while (SD_Init() != 0) {
+//        LCD_ShowString(30,16 + 24*i,"No SD Card",BLACK,WHITE,24,1);
+//        i++;
+//        HAL_Delay(2000);
+//    }
+//    LCD_ShowString(30,16,"SD Init success",BLACK,WHITE,16,1);
+//
+//    //逻辑0扇区的物理扇区号
+//    NumberBack = SD_GetLogic0();
+//    LCD_ShowString(30,16*2,"Number:",BLACK,WHITE,16,1);
+//    LCD_ShowHexNum(30 + 8* strlen("NUmber:"),16*2,NumberBack,8,BLACK,WHITE,16,1 );
+//
+//    //获取扇区总数
+//    uint32_t SectorNum = 0;
+//    SectorNum = GetSDCardSectorCount(); //SectorNum = 15564800 SD 7.421875GB
 
-    uint8_t i = 0;
-    while (SD_Init() != 0) {
-        LCD_ShowString(30,16 + 24*i,"No SD Card",BLACK,WHITE,24,1);
-        i++;
-        HAL_Delay(2000);
+    //Write Data in SD
+//    uint8_t Buff[512];
+//    for(uint16_t j = 0;j < 512;j++) {
+//        Buff[j] = 2*j;
+//    }
+//    SDCardWriteData(Buff,0x00000000,1);
+
+//    uint8_t RxBuff[512];
+
+    SD_TestFATFs();
+
+    //open file
+    FIL *fil;
+    FRESULT res;
+    fil = malloc(sizeof(FIL));
+    res = f_open(fil,"test.txt",FA_READ | FA_WRITE | FA_OPEN_ALWAYS);
+    if(res) {
+        LCD_ShowString(30,16,"open fail",BLACK,WHITE,16,1);
+    } else {
+        LCD_ShowString(30,16,"open OK",BLACK,WHITE,16,1);
     }
-    LCD_ShowString(30,16,"SD Init success",BLACK,WHITE,16,1);
 
-    //逻辑0扇区的物理扇区号
-    NumberBack = SD_GetLogic0();
-    LCD_ShowString(30,16*2,"Number:",BLACK,WHITE,16,1);
-    LCD_ShowHexNum(30 + 8* strlen("NUmber:"),16*2,NumberBack,8,BLACK,WHITE,16,1 );
-
-    //获取扇区总数
-    uint32_t SectorNum = 0;
-    SectorNum = GetSDCardSectorCount(); //SectorNum = 15564800 SD卡总容量为7.421875GB
-
-    //向SD卡写入数据
-    uint8_t Buff[512];
-    for(uint16_t j = 0;j < 512;j++) {
-        Buff[j] = 2*j;
+    //read file attention: read and write ptr
+    uint8_t RxBuff[512] = {0};
+    uint16_t FSize;
+    uint16_t ReadCount;
+    FSize = f_size(fil);
+    f_read(fil,RxBuff,FSize,(UINT *)&ReadCount);
+    if(ReadCount != 0) {
+        for(uint8_t i = 0;i < FSize;i++) {
+            LCD_ShowChar(30 + 8*i,16*2,RxBuff[i],BLACK,WHITE,16,1);
+        }
     }
-    SDCardWriteData(Buff,0x00000000,1);
 
-    uint8_t RxBuff[512];
+    //write file
+//    uint16_t WriteCount;
+//    f_write(fil,"Light Rain",sizeof("Light Rain"),(UINT *)&WriteCount);
+
+    //close file
+    f_close(fil);
 
   /* USER CODE END 2 */
 
@@ -131,15 +178,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      //从SD卡读取数据
-      for(uint16_t m = 0;m < 512 ;m++) {
-          RxBuff[m] = 0;
-      }
-        SDCardReadData(RxBuff,0x00000000,1);
-        LCD_ShowIntNum(30,16*3,RxBuff[0],3,BLACK,WHITE,16);
-        LCD_ShowIntNum(30 + 5*8,16*3,RxBuff[1],3,BLACK,WHITE,16);
-        LCD_ShowIntNum(30 + 10*8,16*3,RxBuff[2],3,BLACK,WHITE,16);
-        LCD_ShowIntNum(30 + 15*8,16*3,RxBuff[3],3,BLACK,WHITE,16);
+//      //read SD
+//      for(uint16_t m = 0;m < 512 ;m++) {
+//          RxBuff[m] = 0;
+//      }
+//        SDCardReadData(RxBuff,0x00000000,1);
+//        LCD_ShowIntNum(30,16*3,RxBuff[0],3,BLACK,WHITE,16);
+//        LCD_ShowIntNum(30 + 5*8,16*3,RxBuff[1],3,BLACK,WHITE,16);
+//        LCD_ShowIntNum(30 + 10*8,16*3,RxBuff[2],3,BLACK,WHITE,16);
+//        LCD_ShowIntNum(30 + 15*8,16*3,RxBuff[3],3,BLACK,WHITE,16);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

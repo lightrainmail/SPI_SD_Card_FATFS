@@ -1024,30 +1024,6 @@ Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
 .PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
 
-Middlewares/Third_Party/FatFs/src/option/cc936.obj: Middlewares/Third_Party/FatFs/src/option/cc936.c.obj
-.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.obj
-
-# target to build an object file
-Middlewares/Third_Party/FatFs/src/option/cc936.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj
-.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.c.obj
-
-Middlewares/Third_Party/FatFs/src/option/cc936.i: Middlewares/Third_Party/FatFs/src/option/cc936.c.i
-.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.i
-
-# target to preprocess a source file
-Middlewares/Third_Party/FatFs/src/option/cc936.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.i
-.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.c.i
-
-Middlewares/Third_Party/FatFs/src/option/cc936.s: Middlewares/Third_Party/FatFs/src/option/cc936.c.s
-.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.s
-
-# target to generate assembly for a file
-Middlewares/Third_Party/FatFs/src/option/cc936.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_SPI_SD_Card.elf.dir\build.make CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.s
-.PHONY : Middlewares/Third_Party/FatFs/src/option/cc936.c.s
-
 Middlewares/Third_Party/FatFs/src/option/syscall.obj: Middlewares/Third_Party/FatFs/src/option/syscall.c.obj
 .PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.obj
 
@@ -1193,9 +1169,6 @@ help:
 	@echo ... Middlewares/Third_Party/FatFs/src/ff_gen_drv.obj
 	@echo ... Middlewares/Third_Party/FatFs/src/ff_gen_drv.i
 	@echo ... Middlewares/Third_Party/FatFs/src/ff_gen_drv.s
-	@echo ... Middlewares/Third_Party/FatFs/src/option/cc936.obj
-	@echo ... Middlewares/Third_Party/FatFs/src/option/cc936.i
-	@echo ... Middlewares/Third_Party/FatFs/src/option/cc936.s
 	@echo ... Middlewares/Third_Party/FatFs/src/option/syscall.obj
 	@echo ... Middlewares/Third_Party/FatFs/src/option/syscall.i
 	@echo ... Middlewares/Third_Party/FatFs/src/option/syscall.s

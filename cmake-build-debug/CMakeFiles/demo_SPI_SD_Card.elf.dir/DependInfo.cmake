@@ -72,7 +72,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/diskio.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj.d"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj.d"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj.d"
-  "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/cc936.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/cc936.c.obj.d"
   "C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/syscall.c" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj" "gcc" "CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj.d"
   )
 

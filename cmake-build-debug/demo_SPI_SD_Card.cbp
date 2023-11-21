@@ -493,9 +493,6 @@
 		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/integer.h">
 			<Option target="demo_SPI_SD_Card.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/cc936.c">
-			<Option target="demo_SPI_SD_Card.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/14806/OneDrive/STM32-NUCLEO-L476RG/demo_SPI_SD_Card/Middlewares/Third_Party/FatFs/src/option/syscall.c">
 			<Option target="demo_SPI_SD_Card.elf"/>
 		</Unit>

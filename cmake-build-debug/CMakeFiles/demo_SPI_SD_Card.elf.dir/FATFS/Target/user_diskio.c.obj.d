@@ -58,4 +58,8 @@ CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj: \
  C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\STM32L4xx_HAL_Driver\Inc/stm32l4xx_hal_uart_ex.h \
  c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
  c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
- c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h
+ c:\progra~1\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\SD_Driver\Inc/sd.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Drivers\SD_Driver\Inc/sd_interface.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Inc/spi.h \
+ C:\Users\14806\OneDrive\STM32-NUCLEO-L476RG\demo_SPI_SD_Card\Core\Inc/main.h
