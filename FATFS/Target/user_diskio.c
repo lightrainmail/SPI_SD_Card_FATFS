@@ -72,7 +72,7 @@ Diskio_drvTypeDef  USER_Driver =
 /* Private functions ---------------------------------------------------------*/
 
 /**
-  * @brief  Initializes a Drive When use f_mount() function,USER_initialize() function will be run
+  * @brief  Initializes a Drive
   * @param  pdrv: Physical drive number (0..)
   * @retval DSTATUS: Operation status
   */

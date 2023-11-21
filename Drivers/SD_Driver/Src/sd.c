@@ -322,7 +322,7 @@ uint8_t SDCardReadWriteOneByte(uint8_t DataTx)
 返回值：
 			0,成功;其他,失败;
 */
-uint8_t SDCardReciveData(uint8_t *buf, uint16_t len)
+uint8_t SDCardReceiveData(uint8_t *buf, uint16_t len)
 {
 		while(SDCardReadWriteOneByte(0xFF)!=0xFE){}//等待SD卡发回数据起始令牌0xFE
     while(len--)//开始接收数据
@@ -404,7 +404,7 @@ uint32_t GetSDCardSectorCount(void)
 	  uint16_t csize;
 		//获取SD卡的CSD信息，包括容量和速度信息,存放CID的内存,至少16Byte
 		SendSDCardCmd(SDCard_CMD9,0,0x01);//发SDCard_CMD9命令，读CSD
-    SDCardReciveData(csd, 16);//接收16个字节的数据
+    SDCardReceiveData(csd, 16);//接收16个字节的数据
 		SD_CS_Set();//取消片选
 		SDCardReadWriteOneByte(0xff);//提供额外的8个时钟
     if((csd[0]&0xC0)==0x40)  //SDHC卡，按照下面方式计算
@@ -432,14 +432,14 @@ void SDCardReadData(u8*buf,u32 sector,u32 cnt)
 	if(cnt==1)
 	{
 		SendSDCardCmd(SDCard_CMD17,sector,0x01);//读扇区
-        SDCardReciveData(buf, 512);			//接收512个字节
+        SDCardReceiveData(buf, 512);			//接收512个字节
 	}
 	else
 	{
 		SendSDCardCmd(SDCard_CMD18,sector,0x01);//连续读命令
 		for(i=0;i<cnt;i++)
 		{
-            SDCardReciveData(buf, 512);//接收512个字节
+            SDCardReceiveData(buf, 512);//接收512个字节
 			buf+=512;
 		}
 		SendSDCardCmd(SDCard_CMD12,0,0x01);	//停止数据传输

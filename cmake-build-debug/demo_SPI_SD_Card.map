@@ -1267,7 +1267,7 @@ LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.
                 0x08000000                g_pfnVectors
                 0x08000188                . = ALIGN (0x4)
 
-.text           0x08000188     0x5580
+.text           0x08000188     0x5570
                 0x08000188                . = ALIGN (0x4)
  *(.text)
  .text          0x08000188       0x40 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
@@ -1282,629 +1282,623 @@ LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.
  .text.MX_GPIO_Init
                 0x080004cc       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
                 0x080004cc                MX_GPIO_Init
- .text.SD_TestFATFs
-                0x0800054c       0x60 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
-                0x0800054c                SD_TestFATFs
  .text.Error_Handler
-                0x080005ac        0x4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
-                0x080005ac                Error_Handler
+                0x0800054c        0x4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+                0x0800054c                Error_Handler
  .text.SystemClock_Config
-                0x080005b0       0x7a CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
-                0x080005b0                SystemClock_Config
- *fill*         0x0800062a        0x2 
- .text.main     0x0800062c       0xdc CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
-                0x0800062c                main
+                0x08000550       0x7a CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+                0x08000550                SystemClock_Config
+ *fill*         0x080005ca        0x2 
+ .text.main     0x080005cc      0x130 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+                0x080005cc                main
  .text.MX_SPI1_Init
-                0x08000708       0x4c CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
-                0x08000708                MX_SPI1_Init
+                0x080006fc       0x4c CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+                0x080006fc                MX_SPI1_Init
  .text.MX_SPI3_Init
-                0x08000754       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
-                0x08000754                MX_SPI3_Init
+                0x08000748       0x4c CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+                0x08000748                MX_SPI3_Init
  .text.HAL_SPI_MspInit
-                0x080007a4       0xb8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
-                0x080007a4                HAL_SPI_MspInit
+                0x08000794       0xb8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+                0x08000794                HAL_SPI_MspInit
  .text.SD_SPI3_Init
-                0x0800085c       0x4c CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
-                0x0800085c                SD_SPI3_Init
+                0x0800084c       0x4c CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+                0x0800084c                SD_SPI3_Init
  .text.HAL_MspInit
-                0x080008a8       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
-                0x080008a8                HAL_MspInit
+                0x08000898       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x08000898                HAL_MspInit
  .text.NMI_Handler
-                0x080008d8        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008d8                NMI_Handler
+                0x080008c8        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008c8                NMI_Handler
  .text.HardFault_Handler
-                0x080008da        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008da                HardFault_Handler
+                0x080008ca        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008ca                HardFault_Handler
  .text.MemManage_Handler
-                0x080008dc        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008dc                MemManage_Handler
+                0x080008cc        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008cc                MemManage_Handler
  .text.BusFault_Handler
-                0x080008de        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008de                BusFault_Handler
+                0x080008ce        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008ce                BusFault_Handler
  .text.UsageFault_Handler
-                0x080008e0        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008e0                UsageFault_Handler
+                0x080008d0        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008d0                UsageFault_Handler
  .text.SVC_Handler
-                0x080008e2        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008e2                SVC_Handler
+                0x080008d2        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008d2                SVC_Handler
  .text.DebugMon_Handler
-                0x080008e4        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008e4                DebugMon_Handler
+                0x080008d4        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008d4                DebugMon_Handler
  .text.PendSV_Handler
-                0x080008e6        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008e6                PendSV_Handler
+                0x080008d6        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008d6                PendSV_Handler
  .text.SysTick_Handler
-                0x080008e8        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
-                0x080008e8                SysTick_Handler
- .text._sbrk    0x080008f0       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
-                0x080008f0                _sbrk
+                0x080008d8        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x080008d8                SysTick_Handler
+ .text._sbrk    0x080008e0       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+                0x080008e0                _sbrk
  .text.SystemInit
-                0x08000938        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
-                0x08000938                SystemInit
- *fill*         0x0800093a        0x2 
+                0x08000928        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+                0x08000928                SystemInit
+ *fill*         0x0800092a        0x2 
  .text.MX_USART2_UART_Init
-                0x0800093c       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
-                0x0800093c                MX_USART2_UART_Init
+                0x0800092c       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+                0x0800092c                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x08000974       0x88 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
-                0x08000974                HAL_UART_MspInit
+                0x08000964       0x88 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+                0x08000964                HAL_UART_MspInit
  .text.Reset_Handler
-                0x080009fc       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
-                0x080009fc                Reset_Handler
+                0x080009ec       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
+                0x080009ec                Reset_Handler
  .text.Default_Handler
-                0x08000a4c        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
-                0x08000a4c                RTC_Alarm_IRQHandler
-                0x08000a4c                EXTI2_IRQHandler
-                0x08000a4c                TIM8_TRG_COM_IRQHandler
-                0x08000a4c                TIM8_CC_IRQHandler
-                0x08000a4c                TIM1_CC_IRQHandler
-                0x08000a4c                TSC_IRQHandler
-                0x08000a4c                TAMP_STAMP_IRQHandler
-                0x08000a4c                EXTI3_IRQHandler
-                0x08000a4c                LPTIM2_IRQHandler
-                0x08000a4c                DFSDM1_FLT1_IRQHandler
-                0x08000a4c                I2C3_ER_IRQHandler
-                0x08000a4c                DFSDM1_FLT2_IRQHandler
-                0x08000a4c                EXTI0_IRQHandler
-                0x08000a4c                I2C2_EV_IRQHandler
-                0x08000a4c                CAN1_RX0_IRQHandler
-                0x08000a4c                FPU_IRQHandler
-                0x08000a4c                TIM1_UP_TIM16_IRQHandler
-                0x08000a4c                ADC1_2_IRQHandler
-                0x08000a4c                SPI1_IRQHandler
-                0x08000a4c                TIM6_DAC_IRQHandler
-                0x08000a4c                TIM8_UP_IRQHandler
-                0x08000a4c                DMA2_Channel2_IRQHandler
-                0x08000a4c                DMA1_Channel4_IRQHandler
-                0x08000a4c                SAI2_IRQHandler
-                0x08000a4c                DFSDM1_FLT3_IRQHandler
-                0x08000a4c                USART3_IRQHandler
-                0x08000a4c                DMA1_Channel7_IRQHandler
-                0x08000a4c                CAN1_RX1_IRQHandler
-                0x08000a4c                LCD_IRQHandler
-                0x08000a4c                UART5_IRQHandler
-                0x08000a4c                ADC3_IRQHandler
-                0x08000a4c                TIM4_IRQHandler
-                0x08000a4c                DMA2_Channel1_IRQHandler
-                0x08000a4c                QUADSPI_IRQHandler
-                0x08000a4c                I2C1_EV_IRQHandler
-                0x08000a4c                DMA1_Channel6_IRQHandler
-                0x08000a4c                UART4_IRQHandler
-                0x08000a4c                DMA2_Channel4_IRQHandler
-                0x08000a4c                TIM3_IRQHandler
-                0x08000a4c                RCC_IRQHandler
-                0x08000a4c                DMA1_Channel1_IRQHandler
-                0x08000a4c                Default_Handler
-                0x08000a4c                DMA2_Channel7_IRQHandler
-                0x08000a4c                EXTI15_10_IRQHandler
-                0x08000a4c                TIM7_IRQHandler
-                0x08000a4c                SDMMC1_IRQHandler
-                0x08000a4c                TIM5_IRQHandler
-                0x08000a4c                I2C3_EV_IRQHandler
-                0x08000a4c                EXTI9_5_IRQHandler
-                0x08000a4c                RTC_WKUP_IRQHandler
-                0x08000a4c                PVD_PVM_IRQHandler
-                0x08000a4c                SPI2_IRQHandler
-                0x08000a4c                CAN1_TX_IRQHandler
-                0x08000a4c                DMA2_Channel5_IRQHandler
-                0x08000a4c                DMA1_Channel5_IRQHandler
-                0x08000a4c                EXTI4_IRQHandler
-                0x08000a4c                RNG_IRQHandler
-                0x08000a4c                TIM1_TRG_COM_TIM17_IRQHandler
-                0x08000a4c                DMA1_Channel3_IRQHandler
-                0x08000a4c                COMP_IRQHandler
-                0x08000a4c                WWDG_IRQHandler
-                0x08000a4c                LPUART1_IRQHandler
-                0x08000a4c                DMA2_Channel6_IRQHandler
-                0x08000a4c                TIM2_IRQHandler
-                0x08000a4c                EXTI1_IRQHandler
-                0x08000a4c                USART2_IRQHandler
-                0x08000a4c                DFSDM1_FLT0_IRQHandler
-                0x08000a4c                I2C2_ER_IRQHandler
-                0x08000a4c                DMA1_Channel2_IRQHandler
-                0x08000a4c                TIM8_BRK_IRQHandler
-                0x08000a4c                CAN1_SCE_IRQHandler
-                0x08000a4c                FLASH_IRQHandler
-                0x08000a4c                USART1_IRQHandler
-                0x08000a4c                OTG_FS_IRQHandler
-                0x08000a4c                SPI3_IRQHandler
-                0x08000a4c                I2C1_ER_IRQHandler
-                0x08000a4c                FMC_IRQHandler
-                0x08000a4c                SWPMI1_IRQHandler
-                0x08000a4c                LPTIM1_IRQHandler
-                0x08000a4c                SAI1_IRQHandler
-                0x08000a4c                DMA2_Channel3_IRQHandler
-                0x08000a4c                TIM1_BRK_TIM15_IRQHandler
+                0x08000a3c        0x2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
+                0x08000a3c                RTC_Alarm_IRQHandler
+                0x08000a3c                EXTI2_IRQHandler
+                0x08000a3c                TIM8_TRG_COM_IRQHandler
+                0x08000a3c                TIM8_CC_IRQHandler
+                0x08000a3c                TIM1_CC_IRQHandler
+                0x08000a3c                TSC_IRQHandler
+                0x08000a3c                TAMP_STAMP_IRQHandler
+                0x08000a3c                EXTI3_IRQHandler
+                0x08000a3c                LPTIM2_IRQHandler
+                0x08000a3c                DFSDM1_FLT1_IRQHandler
+                0x08000a3c                I2C3_ER_IRQHandler
+                0x08000a3c                DFSDM1_FLT2_IRQHandler
+                0x08000a3c                EXTI0_IRQHandler
+                0x08000a3c                I2C2_EV_IRQHandler
+                0x08000a3c                CAN1_RX0_IRQHandler
+                0x08000a3c                FPU_IRQHandler
+                0x08000a3c                TIM1_UP_TIM16_IRQHandler
+                0x08000a3c                ADC1_2_IRQHandler
+                0x08000a3c                SPI1_IRQHandler
+                0x08000a3c                TIM6_DAC_IRQHandler
+                0x08000a3c                TIM8_UP_IRQHandler
+                0x08000a3c                DMA2_Channel2_IRQHandler
+                0x08000a3c                DMA1_Channel4_IRQHandler
+                0x08000a3c                SAI2_IRQHandler
+                0x08000a3c                DFSDM1_FLT3_IRQHandler
+                0x08000a3c                USART3_IRQHandler
+                0x08000a3c                DMA1_Channel7_IRQHandler
+                0x08000a3c                CAN1_RX1_IRQHandler
+                0x08000a3c                LCD_IRQHandler
+                0x08000a3c                UART5_IRQHandler
+                0x08000a3c                ADC3_IRQHandler
+                0x08000a3c                TIM4_IRQHandler
+                0x08000a3c                DMA2_Channel1_IRQHandler
+                0x08000a3c                QUADSPI_IRQHandler
+                0x08000a3c                I2C1_EV_IRQHandler
+                0x08000a3c                DMA1_Channel6_IRQHandler
+                0x08000a3c                UART4_IRQHandler
+                0x08000a3c                DMA2_Channel4_IRQHandler
+                0x08000a3c                TIM3_IRQHandler
+                0x08000a3c                RCC_IRQHandler
+                0x08000a3c                DMA1_Channel1_IRQHandler
+                0x08000a3c                Default_Handler
+                0x08000a3c                DMA2_Channel7_IRQHandler
+                0x08000a3c                EXTI15_10_IRQHandler
+                0x08000a3c                TIM7_IRQHandler
+                0x08000a3c                SDMMC1_IRQHandler
+                0x08000a3c                TIM5_IRQHandler
+                0x08000a3c                I2C3_EV_IRQHandler
+                0x08000a3c                EXTI9_5_IRQHandler
+                0x08000a3c                RTC_WKUP_IRQHandler
+                0x08000a3c                PVD_PVM_IRQHandler
+                0x08000a3c                SPI2_IRQHandler
+                0x08000a3c                CAN1_TX_IRQHandler
+                0x08000a3c                DMA2_Channel5_IRQHandler
+                0x08000a3c                DMA1_Channel5_IRQHandler
+                0x08000a3c                EXTI4_IRQHandler
+                0x08000a3c                RNG_IRQHandler
+                0x08000a3c                TIM1_TRG_COM_TIM17_IRQHandler
+                0x08000a3c                DMA1_Channel3_IRQHandler
+                0x08000a3c                COMP_IRQHandler
+                0x08000a3c                WWDG_IRQHandler
+                0x08000a3c                LPUART1_IRQHandler
+                0x08000a3c                DMA2_Channel6_IRQHandler
+                0x08000a3c                TIM2_IRQHandler
+                0x08000a3c                EXTI1_IRQHandler
+                0x08000a3c                USART2_IRQHandler
+                0x08000a3c                DFSDM1_FLT0_IRQHandler
+                0x08000a3c                I2C2_ER_IRQHandler
+                0x08000a3c                DMA1_Channel2_IRQHandler
+                0x08000a3c                TIM8_BRK_IRQHandler
+                0x08000a3c                CAN1_SCE_IRQHandler
+                0x08000a3c                FLASH_IRQHandler
+                0x08000a3c                USART1_IRQHandler
+                0x08000a3c                OTG_FS_IRQHandler
+                0x08000a3c                SPI3_IRQHandler
+                0x08000a3c                I2C1_ER_IRQHandler
+                0x08000a3c                FMC_IRQHandler
+                0x08000a3c                SWPMI1_IRQHandler
+                0x08000a3c                LPTIM1_IRQHandler
+                0x08000a3c                SAI1_IRQHandler
+                0x08000a3c                DMA2_Channel3_IRQHandler
+                0x08000a3c                TIM1_BRK_TIM15_IRQHandler
  .text.LCD_Write8BitData
-                0x08000a4e        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000a4e                LCD_Write8BitData
+                0x08000a3e        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000a3e                LCD_Write8BitData
  .text.LCD_Write16BitData
-                0x08000a56        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000a56                LCD_Write16BitData
+                0x08000a46        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000a46                LCD_Write16BitData
  .text.LCD_WriteCommand
-                0x08000a5e       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000a5e                LCD_WriteCommand
+                0x08000a4e       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000a4e                LCD_WriteCommand
  .text.LCD_Delayms
-                0x08000a72        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000a72                LCD_Delayms
+                0x08000a62        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000a62                LCD_Delayms
  .text.LCD_Address_Set
-                0x08000a7a       0x3e CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000a7a                LCD_Address_Set
+                0x08000a6a       0x3e CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000a6a                LCD_Address_Set
  .text.LCD_Fill
-                0x08000ab8       0x3c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000ab8                LCD_Fill
+                0x08000aa8       0x3c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000aa8                LCD_Fill
  .text.LCD_DrawPoint
-                0x08000af4       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000af4                LCD_DrawPoint
+                0x08000ae4       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000ae4                LCD_DrawPoint
  .text.LCD_ShowChar
-                0x08000b08      0x140 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000b08                LCD_ShowChar
+                0x08000af8      0x140 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000af8                LCD_ShowChar
  .text.LCD_ShowString
-                0x08000c48       0x44 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000c48                LCD_ShowString
+                0x08000c38       0x44 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000c38                LCD_ShowString
  .text.LCD_Init
-                0x08000c8c      0x19e CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08000c8c                LCD_Init
- *fill*         0x08000e2a        0x2 
+                0x08000c7c      0x19e CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08000c7c                LCD_Init
+ *fill*         0x08000e1a        0x2 
  .text.lcd_interface_gpio_init
-                0x08000e2c       0xc8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000e2c                lcd_interface_gpio_init
+                0x08000e1c       0xc8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000e1c                lcd_interface_gpio_init
  .text.lcd_interface_delayms
-                0x08000ef4        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000ef4                lcd_interface_delayms
+                0x08000ee4        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000ee4                lcd_interface_delayms
  .text.lcd_interface_res_clr
-                0x08000efc       0x12 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000efc                lcd_interface_res_clr
+                0x08000eec       0x12 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000eec                lcd_interface_res_clr
  .text.lcd_interface_res_set
-                0x08000f0e       0x12 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000f0e                lcd_interface_res_set
+                0x08000efe       0x12 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000efe                lcd_interface_res_set
  .text.lcd_interface_dc_lcr
-                0x08000f20       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000f20                lcd_interface_dc_lcr
+                0x08000f10       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000f10                lcd_interface_dc_lcr
  .text.lcd_interface_dc_set
-                0x08000f34       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000f34                lcd_interface_dc_set
+                0x08000f24       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000f24                lcd_interface_dc_set
  .text.lcd_interface_cs_clr
-                0x08000f48       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000f48                lcd_interface_cs_clr
+                0x08000f38       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000f38                lcd_interface_cs_clr
  .text.lcd_interface_cs_set
-                0x08000f5c       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000f5c                lcd_interface_cs_set
+                0x08000f4c       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000f4c                lcd_interface_cs_set
  .text.lcd_interface_write_8bit_data
-                0x08000f70       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000f70                lcd_interface_write_8bit_data
+                0x08000f60       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000f60                lcd_interface_write_8bit_data
  .text.lcd_interface_write_16bit_data
-                0x08000f98       0x2c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000f98                lcd_interface_write_16bit_data
+                0x08000f88       0x2c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000f88                lcd_interface_write_16bit_data
  .text.lcd_interface_blk_set
-                0x08000fc4       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
-                0x08000fc4                lcd_interface_blk_set
+                0x08000fb4       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x08000fb4                lcd_interface_blk_set
  .text.SD_WriteCommand
-                0x08000fd8       0x6a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x08000fd8                SD_WriteCommand
- *fill*         0x08001042        0x2 
- .text.SD_Init  0x08001044      0x1bc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x08001044                SD_Init
+                0x08000fc8       0x6a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x08000fc8                SD_WriteCommand
+ *fill*         0x08001032        0x2 
+ .text.SD_Init  0x08001034      0x1bc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x08001034                SD_Init
  .text.SDCardReadWriteOneByte
-                0x08001200        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x08001200                SDCardReadWriteOneByte
- .text.SDCardReciveData
-                0x08001208       0x36 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x08001208                SDCardReciveData
+                0x080011f0        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x080011f0                SDCardReadWriteOneByte
+ .text.SDCardReceiveData
+                0x080011f8       0x36 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x080011f8                SDCardReceiveData
  .text.SDCardSendData
-                0x0800123e       0x44 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x0800123e                SDCardSendData
+                0x0800122e       0x44 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x0800122e                SDCardSendData
  .text.SendSDCardCmd
-                0x08001282       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x08001282                SendSDCardCmd
+                0x08001272       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x08001272                SendSDCardCmd
  .text.GetSDCardSectorCount
-                0x080012e6       0x4a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x080012e6                GetSDCardSectorCount
+                0x080012d6       0x4a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x080012d6                GetSDCardSectorCount
  .text.SDCardReadData
-                0x08001330       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x08001330                SDCardReadData
+                0x08001320       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x08001320                SDCardReadData
  .text.SDCardWriteData
-                0x08001384       0x66 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                0x08001384                SDCardWriteData
- *fill*         0x080013ea        0x2 
+                0x08001374       0x66 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x08001374                SDCardWriteData
+ *fill*         0x080013da        0x2 
  .text.sd_interface_transmit_receive_data
-                0x080013ec       0x2c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
-                0x080013ec                sd_interface_transmit_receive_data
+                0x080013dc       0x2c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+                0x080013dc                sd_interface_transmit_receive_data
  .text.sd_interface_gpio_init
-                0x08001418       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
-                0x08001418                sd_interface_gpio_init
+                0x08001408       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+                0x08001408                sd_interface_gpio_init
  .text.sd_interface_cs_set
-                0x0800146c       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
-                0x0800146c                sd_interface_cs_set
+                0x0800145c       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+                0x0800145c                sd_interface_cs_set
  .text.sd_interface_cs_clr
-                0x08001480       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
-                0x08001480                sd_interface_cs_clr
+                0x08001470       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+                0x08001470                sd_interface_cs_clr
  .text.sd_interface_delayms
-                0x08001494        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
-                0x08001494                sd_interface_delayms
+                0x08001484        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+                0x08001484                sd_interface_delayms
  .text.HAL_InitTick
-                0x0800149c       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x0800149c                HAL_InitTick
+                0x0800148c       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x0800148c                HAL_InitTick
  .text.HAL_Init
-                0x080014ec       0x2c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x080014ec                HAL_Init
+                0x080014dc       0x2c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x080014dc                HAL_Init
  .text.HAL_IncTick
-                0x08001518       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08001518                HAL_IncTick
+                0x08001508       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08001508                HAL_IncTick
  .text.HAL_GetTick
-                0x08001530        0xc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x08001530                HAL_GetTick
+                0x08001520        0xc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x08001520                HAL_GetTick
  .text.HAL_Delay
-                0x0800153c       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
-                0x0800153c                HAL_Delay
+                0x0800152c       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x0800152c                HAL_Delay
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08001564       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x08001564                HAL_NVIC_SetPriorityGrouping
+                0x08001554       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08001554                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08001588       0x70 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x08001588                HAL_NVIC_SetPriority
+                0x08001578       0x70 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x08001578                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x080015f8       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
-                0x080015f8                HAL_SYSTICK_Config
+                0x080015e8       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x080015e8                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x08001620      0x20c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                0x08001620                HAL_GPIO_Init
+                0x08001610      0x20c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x08001610                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x0800182c        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
-                0x0800182c                HAL_GPIO_WritePin
- *fill*         0x08001836        0x2 
+                0x0800181c        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x0800181c                HAL_GPIO_WritePin
+ *fill*         0x08001826        0x2 
  .text.HAL_PWREx_GetVoltageRange
-                0x08001838       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x08001838                HAL_PWREx_GetVoltageRange
+                0x08001828       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x08001828                HAL_PWREx_GetVoltageRange
  .text.HAL_PWREx_ControlVoltageScaling
-                0x08001848       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
-                0x08001848                HAL_PWREx_ControlVoltageScaling
+                0x08001838       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x08001838                HAL_PWREx_ControlVoltageScaling
  .text.RCC_SetFlashLatencyFromMSIRange
-                0x080018d8       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080018c8       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
  .text.HAL_RCC_GetSysClockFreq
-                0x08001968       0xb4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x08001968                HAL_RCC_GetSysClockFreq
+                0x08001958       0xb4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x08001958                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_OscConfig
-                0x08001a1c      0x61c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x08001a1c                HAL_RCC_OscConfig
+                0x08001a0c      0x61c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x08001a0c                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x08002038      0x188 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x08002038                HAL_RCC_ClockConfig
+                0x08002028      0x188 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x08002028                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x080021c0        0xc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x080021c0                HAL_RCC_GetHCLKFreq
+                0x080021b0        0xc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080021b0                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x080021cc       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x080021cc                HAL_RCC_GetPCLK1Freq
+                0x080021bc       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080021bc                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x080021f0       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
-                0x080021f0                HAL_RCC_GetPCLK2Freq
+                0x080021e0       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x080021e0                HAL_RCC_GetPCLK2Freq
  .text.RCCEx_PLLSAI1_Config
-                0x08002214      0x170 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x08002204      0x170 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .text.RCCEx_PLLSAI2_Config
-                0x08002384      0x14c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x08002374      0x14c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x080024d0      0x454 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
-                0x080024d0                HAL_RCCEx_PeriphCLKConfig
+                0x080024c0      0x454 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x080024c0                HAL_RCCEx_PeriphCLKConfig
  .text.SPI_WaitFlagStateUntilTimeout
-                0x08002924       0xd4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+                0x08002914       0xd4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
  .text.SPI_WaitFifoStateUntilTimeout
-                0x080029f8       0xf4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+                0x080029e8       0xf4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
  .text.SPI_EndRxTxTransaction
-                0x08002aec       0x62 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+                0x08002adc       0x62 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
  .text.HAL_SPI_Init
-                0x08002b4e       0xde CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
-                0x08002b4e                HAL_SPI_Init
+                0x08002b3e       0xde CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+                0x08002b3e                HAL_SPI_Init
  .text.HAL_SPI_Transmit
-                0x08002c2c      0x1fe CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
-                0x08002c2c                HAL_SPI_Transmit
+                0x08002c1c      0x1fe CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+                0x08002c1c                HAL_SPI_Transmit
  .text.HAL_SPI_TransmitReceive
-                0x08002e2a      0x2ec CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
-                0x08002e2a                HAL_SPI_TransmitReceive
+                0x08002e1a      0x2ec CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+                0x08002e1a                HAL_SPI_TransmitReceive
  .text.UART_EndRxTransfer
-                0x08003116       0x52 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x08003106       0x52 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x08003168      0x328 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x08003168                UART_SetConfig
+                0x08003158      0x328 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x08003158                UART_SetConfig
  .text.UART_AdvFeatureConfig
-                0x08003490       0xca CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x08003490                UART_AdvFeatureConfig
+                0x08003480       0xca CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x08003480                UART_AdvFeatureConfig
  .text.UART_WaitOnFlagUntilTimeout
-                0x0800355a       0x9a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x0800355a                UART_WaitOnFlagUntilTimeout
+                0x0800354a       0x9a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x0800354a                UART_WaitOnFlagUntilTimeout
  .text.UART_CheckIdleState
-                0x080035f4       0xc6 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x080035f4                UART_CheckIdleState
+                0x080035e4       0xc6 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x080035e4                UART_CheckIdleState
  .text.HAL_UART_Init
-                0x080036ba       0x62 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
-                0x080036ba                HAL_UART_Init
+                0x080036aa       0x62 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x080036aa                HAL_UART_Init
  .text.MX_FATFS_Init
-                0x0800371c       0x1c CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
-                0x0800371c                MX_FATFS_Init
+                0x0800370c       0x1c CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+                0x0800370c                MX_FATFS_Init
  .text.get_fattime
-                0x08003738        0x4 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
-                0x08003738                get_fattime
+                0x08003728        0x4 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+                0x08003728                get_fattime
  .text.USER_status
-                0x0800373c       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
-                0x0800373c                USER_status
+                0x0800372c       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+                0x0800372c                USER_status
  .text.USER_initialize
-                0x08003754       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
-                0x08003754                USER_initialize
+                0x08003744       0x24 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+                0x08003744                USER_initialize
  .text.USER_read
-                0x08003778       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
-                0x08003778                USER_read
+                0x08003768       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+                0x08003768                USER_read
  .text.USER_write
-                0x08003788       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
-                0x08003788                USER_write
+                0x08003778       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+                0x08003778                USER_write
  .text.USER_ioctl
-                0x08003798       0x34 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
-                0x08003798                USER_ioctl
+                0x08003788       0x34 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+                0x08003788                USER_ioctl
  .text.disk_status
-                0x080037cc       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
-                0x080037cc                disk_status
+                0x080037bc       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+                0x080037bc                disk_status
  .text.disk_initialize
-                0x080037e4       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
-                0x080037e4                disk_initialize
+                0x080037d4       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+                0x080037d4                disk_initialize
  .text.disk_read
-                0x0800380c       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
-                0x0800380c                disk_read
+                0x080037fc       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+                0x080037fc                disk_read
  .text.disk_write
-                0x08003824       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
-                0x08003824                disk_write
+                0x08003814       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+                0x08003814                disk_write
  .text.disk_ioctl
-                0x0800383c       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
-                0x0800383c                disk_ioctl
- .text.ld_word  0x08003854        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x0800382c       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+                0x0800382c                disk_ioctl
+ .text.ld_word  0x08003844        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.ld_dword
-                0x0800385e       0x16 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.st_word  0x08003874        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x0800384e       0x16 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.st_word  0x08003864        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.st_dword
-                0x0800387c       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.mem_cpy  0x08003890       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.mem_set  0x080038a4        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.mem_cmp  0x080038ae       0x1a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.chk_chr  0x080038c8       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x0800386c       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.mem_cpy  0x08003880       0x14 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.mem_set  0x08003894        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.mem_cmp  0x0800389e       0x1a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.chk_chr  0x080038b8       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.chk_lock
-                0x080038d8       0x74 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x080038c8       0x74 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.enq_lock
-                0x0800394c       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x0800393c       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.inc_lock
-                0x0800396c       0xa8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x0800395c       0xa8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.dec_lock
-                0x08003a14       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003a04       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.clear_lock
-                0x08003a54       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003a44       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.clust2sect
-                0x08003a8c       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003a7c       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.clmt_clust
-                0x08003aa4       0x22 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003a94       0x22 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.ld_clust
-                0x08003ac6       0x26 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003ab6       0x26 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.st_clust
-                0x08003aec       0x26 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- *fill*         0x08003b12        0x2 
+                0x08003adc       0x26 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ *fill*         0x08003b02        0x2 
  .text.create_name
-                0x08003b14       0xcc CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003b04       0xcc CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.get_ldnumber
-                0x08003be0       0x52 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003bd0       0x52 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.validate
-                0x08003c32       0x46 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003c22       0x46 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.sync_window
-                0x08003c78       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003c68       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.move_window
-                0x08003ccc       0x36 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- *fill*         0x08003d02        0x2 
+                0x08003cbc       0x36 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ *fill*         0x08003cf2        0x2 
  .text.check_fs
-                0x08003d04       0x78 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003cf4       0x78 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.find_volume
-                0x08003d7c      0x300 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.put_fat  0x0800407c      0x10e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.get_fat  0x0800418a       0xd0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.dir_sdi  0x0800425a       0xac CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08003d6c      0x300 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.put_fat  0x0800406c      0x10e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.get_fat  0x0800417a       0xd0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.dir_sdi  0x0800424a       0xac CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.create_chain
-                0x08004306       0xcc CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x080042f6       0xcc CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.remove_chain
-                0x080043d2       0x7e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x080043c2       0x7e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.dir_next
-                0x08004450      0x108 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08004440      0x108 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.dir_find
-                0x08004558       0x5a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08004548       0x5a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.follow_path
-                0x080045b2       0x8c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x080045a2       0x8c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.dir_alloc
-                0x0800463e       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x0800462e       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .text.dir_register
-                0x0800468e       0x3e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.sync_fs  0x080046cc       0x8c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .text.f_mount  0x08004758       0x5c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
-                0x08004758                f_mount
- .text.f_open   0x080047b4      0x226 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
-                0x080047b4                f_open
- .text.f_read   0x080049da      0x1c2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
-                0x080049da                f_read
- .text.f_sync   0x08004b9c       0x98 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
-                0x08004b9c                f_sync
- .text.f_close  0x08004c34       0x2a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
-                0x08004c34                f_close
- *fill*         0x08004c5e        0x2 
+                0x0800467e       0x3e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.sync_fs  0x080046bc       0x8c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .text.f_mount  0x08004748       0x5c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08004748                f_mount
+ .text.f_open   0x080047a4      0x226 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x080047a4                f_open
+ .text.f_read   0x080049ca      0x1c2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x080049ca                f_read
+ .text.f_sync   0x08004b8c       0x98 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08004b8c                f_sync
+ .text.f_close  0x08004c24       0x2a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08004c24                f_close
+ *fill*         0x08004c4e        0x2 
  .text.FATFS_LinkDriverEx
-                0x08004c60       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
-                0x08004c60                FATFS_LinkDriverEx
+                0x08004c50       0x54 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+                0x08004c50                FATFS_LinkDriverEx
  .text.FATFS_LinkDriver
-                0x08004cb4        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
-                0x08004cb4                FATFS_LinkDriver
- *fill*         0x08004cbe        0x2 
- .text.__errno  0x08004cc0        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
-                0x08004cc0                __errno
+                0x08004ca4        0xa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+                0x08004ca4                FATFS_LinkDriver
+ *fill*         0x08004cae        0x2 
+ .text.__errno  0x08004cb0        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
+                0x08004cb0                __errno
  .text.__libc_init_array
-                0x08004ccc       0x48 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
-                0x08004ccc                __libc_init_array
- .text.malloc   0x08004d14       0x10 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
-                0x08004d14                malloc
+                0x08004cbc       0x48 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+                0x08004cbc                __libc_init_array
+ .text.malloc   0x08004d04       0x10 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
+                0x08004d04                malloc
  .text._malloc_r
-                0x08004d24      0x560 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
-                0x08004d24                _malloc_r
- .text.memset   0x08005284       0xa4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
-                0x08005284                memset
+                0x08004d14      0x560 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
+                0x08004d14                _malloc_r
+ .text.memset   0x08005274       0xa4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+                0x08005274                memset
  .text.__malloc_lock
-                0x08005328        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
-                0x08005328                __malloc_lock
+                0x08005318        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
+                0x08005318                __malloc_lock
  .text.__malloc_unlock
-                0x08005334        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
-                0x08005334                __malloc_unlock
- .text._sbrk_r  0x08005340       0x24 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
-                0x08005340                _sbrk_r
+                0x08005324        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
+                0x08005324                __malloc_unlock
+ .text._sbrk_r  0x08005330       0x24 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
+                0x08005330                _sbrk_r
  .text.startup.register_fini
-                0x08005364       0x14 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08005378        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
-                0x08005378                atexit
+                0x08005354       0x14 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08005368        0xc c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+                0x08005368                atexit
  .text.__libc_fini_array
-                0x08005384       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
-                0x08005384                __libc_fini_array
+                0x08005374       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+                0x08005374                __libc_fini_array
  .text._malloc_trim_r
-                0x080053b0       0xa0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
-                0x080053b0                _malloc_trim_r
- .text._free_r  0x08005450      0x20c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
-                0x08005450                _free_r
+                0x080053a0       0xa0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
+                0x080053a0                _malloc_trim_r
+ .text._free_r  0x08005440      0x20c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
+                0x08005440                _free_r
  .text.__retarget_lock_acquire_recursive
-                0x0800565c        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x0800565c                __retarget_lock_acquire_recursive
+                0x0800564c        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x0800564c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08005660        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08005660                __retarget_lock_release_recursive
+                0x08005650        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x08005650                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x08005664       0x8c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
-                0x08005664                __register_exitproc
+                0x08005654       0x8c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+                0x08005654                __register_exitproc
  *(.glue_7)
- .glue_7        0x080056f0        0x0 linker stubs
+ .glue_7        0x080056e0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080056f0        0x0 linker stubs
+ .glue_7t       0x080056e0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080056f0        0x0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x080056e0        0x0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x080056f0        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x080056f0                _init
- .init          0x080056f4        0x8 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x080056e0        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x080056e0                _init
+ .init          0x080056e4        0x8 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x080056fc        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x080056fc                _fini
- .fini          0x08005700        0x8 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
-                0x08005708                . = ALIGN (0x4)
-                0x08005708                _etext = .
+ .fini          0x080056ec        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x080056ec                _fini
+ .fini          0x080056f0        0x8 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x080056f8                . = ALIGN (0x4)
+                0x080056f8                _etext = .
 
-.vfp11_veneer   0x08005708        0x0
- .vfp11_veneer  0x08005708        0x0 linker stubs
+.vfp11_veneer   0x080056f8        0x0
+ .vfp11_veneer  0x080056f8        0x0 linker stubs
 
-.v4_bx          0x08005708        0x0
- .v4_bx         0x08005708        0x0 linker stubs
+.v4_bx          0x080056f8        0x0
+ .v4_bx         0x080056f8        0x0 linker stubs
 
-.iplt           0x08005708        0x0
- .iplt          0x08005708        0x0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x080056f8        0x0
+ .iplt          0x080056f8        0x0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x08005708     0x350c
-                0x08005708                . = ALIGN (0x4)
+.rodata         0x080056f8     0x350c
+                0x080056f8                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
- .rodata.SD_TestFATFs.str1.4
-                0x08005708       0x19 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
- *fill*         0x08005721        0x3 
  .rodata.main.str1.4
-                0x08005724       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+                0x080056f8       0x3c CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
  .rodata.AHBPrescTable
-                0x08005744       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
-                0x08005744                AHBPrescTable
+                0x08005734       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+                0x08005734                AHBPrescTable
  .rodata.APBPrescTable
-                0x08005754        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
-                0x08005754                APBPrescTable
+                0x08005744        0x8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+                0x08005744                APBPrescTable
  .rodata.MSIRangeTable
-                0x0800575c       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
-                0x0800575c                MSIRangeTable
+                0x0800574c       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+                0x0800574c                MSIRangeTable
  .rodata.ascii_1206
-                0x0800578c      0x474 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x0800578c                ascii_1206
+                0x0800577c      0x474 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x0800577c                ascii_1206
  .rodata.ascii_1608
-                0x08005c00      0x5f0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x08005c00                ascii_1608
+                0x08005bf0      0x5f0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x08005bf0                ascii_1608
  .rodata.ascii_2412
-                0x080061f0     0x11d0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x080061f0                ascii_2412
+                0x080061e0     0x11d0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x080061e0                ascii_2412
  .rodata.ascii_3216
-                0x080073c0     0x17c0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
-                0x080073c0                ascii_3216
+                0x080073b0     0x17c0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x080073b0                ascii_3216
  .rodata.create_name.str1.4
-                0x08008b80        0xf CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- *fill*         0x08008b8f        0x1 
- .rodata.ExCvt  0x08008b90       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x08008b70        0xf CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ *fill*         0x08008b7f        0x1 
+ .rodata.ExCvt  0x08008b80       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .rodata._global_impure_ptr
-                0x08008c10        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
-                0x08008c10                _global_impure_ptr
-                0x08008c14                . = ALIGN (0x4)
+                0x08008c00        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
+                0x08008c00                _global_impure_ptr
+                0x08008c04                . = ALIGN (0x4)
 
-.ARM.extab      0x08008c14        0x0
-                0x08008c14                . = ALIGN (0x4)
+.ARM.extab      0x08008c04        0x0
+                0x08008c04                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08008c14                . = ALIGN (0x4)
+                0x08008c04                . = ALIGN (0x4)
 
-.ARM            0x08008c14        0x8
-                0x08008c14                . = ALIGN (0x4)
-                0x08008c14                __exidx_start = .
+.ARM            0x08008c04        0x8
+                0x08008c04                . = ALIGN (0x4)
+                0x08008c04                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08008c14        0x8 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x08008c1c                __exidx_end = .
-                0x08008c1c                . = ALIGN (0x4)
+ .ARM.exidx     0x08008c04        0x8 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x08008c0c                __exidx_end = .
+                0x08008c0c                . = ALIGN (0x4)
 
-.rel.dyn        0x08008c1c        0x0
- .rel.iplt      0x08008c1c        0x0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x08008c0c        0x0
+ .rel.iplt      0x08008c0c        0x0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x08008c1c        0x0
-                0x08008c1c                . = ALIGN (0x4)
-                0x08008c1c                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08008c0c        0x0
+                0x08008c0c                . = ALIGN (0x4)
+                0x08008c0c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08008c1c                PROVIDE (__preinit_array_end = .)
-                0x08008c1c                . = ALIGN (0x4)
+                0x08008c0c                PROVIDE (__preinit_array_end = .)
+                0x08008c0c                . = ALIGN (0x4)
 
-.init_array     0x08008c1c        0x8
-                0x08008c1c                . = ALIGN (0x4)
-                0x08008c1c                PROVIDE (__init_array_start = .)
+.init_array     0x08008c0c        0x8
+                0x08008c0c                . = ALIGN (0x4)
+                0x08008c0c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08008c1c        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x08008c0c        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08008c20        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08008c24                PROVIDE (__init_array_end = .)
-                0x08008c24                . = ALIGN (0x4)
+ .init_array    0x08008c10        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x08008c14                PROVIDE (__init_array_end = .)
+                0x08008c14                . = ALIGN (0x4)
 
-.fini_array     0x08008c24        0x4
-                0x08008c24                . = ALIGN (0x4)
-                0x08008c24                PROVIDE (__fini_array_start = .)
+.fini_array     0x08008c14        0x4
+                0x08008c14                . = ALIGN (0x4)
+                0x08008c14                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08008c24        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08008c28                PROVIDE (__fini_array_end = .)
-                0x08008c28                . = ALIGN (0x4)
-                0x08008c28                _sidata = LOADADDR (.data)
+ .fini_array    0x08008c14        0x4 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x08008c18                PROVIDE (__fini_array_end = .)
+                0x08008c18                . = ALIGN (0x4)
+                0x08008c18                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x864 load address 0x08008c28
+.data           0x20000000      0x864 load address 0x08008c18
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1946,11 +1940,11 @@ LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.
                 0x20000864                . = ALIGN (0x4)
                 0x20000864                _edata = .
 
-.igot.plt       0x20000864        0x0 load address 0x0800948c
+.igot.plt       0x20000864        0x0 load address 0x0800947c
  .igot.plt      0x20000864        0x0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                 0x20000864                . = ALIGN (0x4)
 
-.bss            0x20000864      0x1f4 load address 0x0800948c
+.bss            0x20000864      0x1f4 load address 0x0800947c
                 0x20000864                _sbss = .
                 0x20000864                __bss_start__ = _sbss
  *(.bss)
@@ -2008,7 +2002,7 @@ LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.
                 0x20000a58                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000a58     0x1200 load address 0x0800948c
+                0x20000a58     0x1200 load address 0x0800947c
                 0x20000a58                . = ALIGN (0x8)
                 [!provide]                PROVIDE (end = .)
                 0x20000a58                PROVIDE (_end = .)
@@ -2126,33 +2120,33 @@ LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.
 LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x19bbb
+.debug_info     0x00000000    0x19b9e
  .debug_info    0x00000000      0x4b1 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x000004b1      0xa36 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
- .debug_info    0x00000ee7      0xb5f CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
- .debug_info    0x00001a46      0x304 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_info    0x00001d4a      0x130 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_info    0x00001e7a      0x174 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
- .debug_info    0x00001fee      0x425 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
- .debug_info    0x00002413      0xdda CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x000031ed       0x22 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
- .debug_info    0x0000320f     0x24d0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
- .debug_info    0x000056df      0xee7 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
- .debug_info    0x000065c6      0xe13 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
- .debug_info    0x000073d9      0xaba CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
- .debug_info    0x00007e93      0xce8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_info    0x00008b7b     0x109e CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_info    0x00009c19      0x857 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_info    0x0000a470      0xaa2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_info    0x0000af12      0xf3f CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_info    0x0000be51     0x125c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_info    0x0000d0ad     0x2189 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
- .debug_info    0x0000f236     0x529b CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
- .debug_info    0x000144d1      0x4ee CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
- .debug_info    0x000149bf      0x429 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
- .debug_info    0x00014de8      0x4b4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
- .debug_info    0x0001529c     0x4511 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .debug_info    0x000197ad      0x40e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+ .debug_info    0x000004b1      0xa19 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00000eca      0xb5f CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+ .debug_info    0x00001a29      0x304 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_info    0x00001d2d      0x130 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_info    0x00001e5d      0x174 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x00001fd1      0x425 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+ .debug_info    0x000023f6      0xdda CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x000031d0       0x22 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
+ .debug_info    0x000031f2     0x24d0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+ .debug_info    0x000056c2      0xee7 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+ .debug_info    0x000065a9      0xe13 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+ .debug_info    0x000073bc      0xaba CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+ .debug_info    0x00007e76      0xce8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_info    0x00008b5e     0x109e CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_info    0x00009bfc      0x857 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_info    0x0000a453      0xaa2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_info    0x0000aef5      0xf3f CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_info    0x0000be34     0x125c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_info    0x0000d090     0x2189 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+ .debug_info    0x0000f219     0x529b CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+ .debug_info    0x000144b4      0x4ee CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+ .debug_info    0x000149a2      0x429 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+ .debug_info    0x00014dcb      0x4b4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+ .debug_info    0x0001527f     0x4511 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .debug_info    0x00019790      0x40e CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
 
 .debug_abbrev   0x00000000     0x2e60
  .debug_abbrev  0x00000000      0x125 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
@@ -2182,168 +2176,168 @@ LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.
  .debug_abbrev  0x00002a31      0x286 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .debug_abbrev  0x00002cb7      0x1a9 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
 
-.debug_aranges  0x00000000      0xfc8
+.debug_aranges  0x00000000      0xfc0
  .debug_aranges
                 0x00000000       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
  .debug_aranges
-                0x00000020       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+                0x00000020       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x00000058       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+                0x00000050       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
  .debug_aranges
-                0x00000098       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+                0x00000090       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
  .debug_aranges
-                0x000000b8       0x60 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+                0x000000b0       0x60 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
  .debug_aranges
-                0x00000118       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+                0x00000110       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
  .debug_aranges
-                0x00000138       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+                0x00000130       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
  .debug_aranges
-                0x00000160       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+                0x00000158       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
  .debug_aranges
-                0x00000190       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
+                0x00000188       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
  .debug_aranges
-                0x000001b8       0xf0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+                0x000001b0       0xf0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
  .debug_aranges
-                0x000002a8       0x88 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+                0x000002a0       0x88 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
  .debug_aranges
-                0x00000330       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                0x00000328       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
  .debug_aranges
-                0x000003b0       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+                0x000003a8       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
  .debug_aranges
-                0x000003f0      0x130 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+                0x000003e8      0x130 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
  .debug_aranges
-                0x00000520       0xa8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+                0x00000518       0xa8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
  .debug_aranges
-                0x000005c8       0x58 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+                0x000005c0       0x58 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
  .debug_aranges
-                0x00000620      0x160 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+                0x00000618      0x160 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
  .debug_aranges
-                0x00000780       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+                0x00000778       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
  .debug_aranges
-                0x00000810       0xc0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+                0x00000808       0xc0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
  .debug_aranges
-                0x000008d0      0x1d8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+                0x000008c8      0x1d8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
  .debug_aranges
-                0x00000aa8      0x228 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+                0x00000aa0      0x228 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
  .debug_aranges
-                0x00000cd0       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+                0x00000cc8       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
  .debug_aranges
-                0x00000cf8       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+                0x00000cf0       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
  .debug_aranges
-                0x00000d38       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+                0x00000d30       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
  .debug_aranges
-                0x00000d80      0x208 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+                0x00000d78      0x208 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .debug_aranges
-                0x00000f88       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+                0x00000f80       0x40 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
 
-.debug_ranges   0x00000000      0xed8
+.debug_ranges   0x00000000      0xed0
  .debug_ranges  0x00000000       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
- .debug_ranges  0x00000010       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
- .debug_ranges  0x00000038       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
- .debug_ranges  0x00000068       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_ranges  0x00000078       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_ranges  0x000000c8       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
- .debug_ranges  0x000000d8       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
- .debug_ranges  0x000000f0       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
- .debug_ranges  0x00000110       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
- .debug_ranges  0x00000130       0xe0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
- .debug_ranges  0x00000210       0x78 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
- .debug_ranges  0x00000288       0x70 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
- .debug_ranges  0x000002f8       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
- .debug_ranges  0x00000328      0x120 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_ranges  0x00000448       0xf8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_ranges  0x00000540       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_ranges  0x00000588      0x150 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_ranges  0x000006d8       0x98 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_ranges  0x00000770       0xc8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_ranges  0x00000838      0x1c8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
- .debug_ranges  0x00000a00      0x230 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
- .debug_ranges  0x00000c30       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
- .debug_ranges  0x00000c48       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
- .debug_ranges  0x00000c78       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
- .debug_ranges  0x00000cb0      0x1f8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .debug_ranges  0x00000ea8       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+ .debug_ranges  0x00000010       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+ .debug_ranges  0x00000030       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+ .debug_ranges  0x00000060       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_ranges  0x00000070       0x50 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_ranges  0x000000c0       0x10 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+ .debug_ranges  0x000000d0       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+ .debug_ranges  0x000000e8       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+ .debug_ranges  0x00000108       0x20 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
+ .debug_ranges  0x00000128       0xe0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+ .debug_ranges  0x00000208       0x78 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+ .debug_ranges  0x00000280       0x70 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+ .debug_ranges  0x000002f0       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+ .debug_ranges  0x00000320      0x120 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_ranges  0x00000440       0xf8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_ranges  0x00000538       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_ranges  0x00000580      0x150 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_ranges  0x000006d0       0x98 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_ranges  0x00000768       0xc8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_ranges  0x00000830      0x1c8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+ .debug_ranges  0x000009f8      0x230 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+ .debug_ranges  0x00000c28       0x18 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+ .debug_ranges  0x00000c40       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+ .debug_ranges  0x00000c70       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+ .debug_ranges  0x00000ca8      0x1f8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .debug_ranges  0x00000ea0       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
 
-.debug_line     0x00000000    0x14f22
+.debug_line     0x00000000    0x14f0b
  .debug_line    0x00000000      0x253 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x00000253      0x609 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
- .debug_line    0x0000085c      0x555 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
- .debug_line    0x00000db1      0x1c5 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_line    0x00000f76      0x1f1 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_line    0x00001167      0x1e7 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
- .debug_line    0x0000134e      0x2d1 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
- .debug_line    0x0000161f      0x40a CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x00001a29       0xc2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
- .debug_line    0x00001aeb     0x1085 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
- .debug_line    0x00002b70      0x5e0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
- .debug_line    0x00003150      0x98c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
- .debug_line    0x00003adc      0x376 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
- .debug_line    0x00003e52      0x777 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_line    0x000045c9      0x851 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_line    0x00004e1a      0x76d CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_line    0x00005587      0xbba CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_line    0x00006141      0xf97 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_line    0x000070d8     0x15ca CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_line    0x000086a2     0x2a6a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
- .debug_line    0x0000b10c     0x529c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
- .debug_line    0x000103a8      0x24a CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
- .debug_line    0x000105f2      0x312 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
- .debug_line    0x00010904      0x26a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
- .debug_line    0x00010b6e     0x4108 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .debug_line    0x00014c76      0x2ac CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+ .debug_line    0x00000253      0x5f2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000845      0x555 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+ .debug_line    0x00000d9a      0x1c5 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_line    0x00000f5f      0x1f1 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_line    0x00001150      0x1e7 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x00001337      0x2d1 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+ .debug_line    0x00001608      0x40a CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x00001a12       0xc2 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
+ .debug_line    0x00001ad4     0x1085 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+ .debug_line    0x00002b59      0x5e0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+ .debug_line    0x00003139      0x98c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+ .debug_line    0x00003ac5      0x376 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+ .debug_line    0x00003e3b      0x777 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_line    0x000045b2      0x851 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_line    0x00004e03      0x76d CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_line    0x00005570      0xbba CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_line    0x0000612a      0xf97 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_line    0x000070c1     0x15ca CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_line    0x0000868b     0x2a6a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+ .debug_line    0x0000b0f5     0x529c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+ .debug_line    0x00010391      0x24a CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+ .debug_line    0x000105db      0x312 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+ .debug_line    0x000108ed      0x26a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+ .debug_line    0x00010b57     0x4108 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .debug_line    0x00014c5f      0x2ac CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
 
-.debug_str      0x00000000     0x4c9b
+.debug_str      0x00000000     0x4c8f
  .debug_str     0x00000000      0x3a6 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
                                 0x3f6 (size before relaxing)
- .debug_str     0x000003a6      0x4f4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
-                                0x705 (size before relaxing)
- .debug_str     0x0000089a      0x421 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+ .debug_str     0x000003a6      0x4e7 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+                                0x6f8 (size before relaxing)
+ .debug_str     0x0000088d      0x421 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
                                 0x86d (size before relaxing)
- .debug_str     0x00000cbb       0x66 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_str     0x00000cae       0x66 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
                                 0x36e (size before relaxing)
- .debug_str     0x00000d21       0xf1 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_str     0x00000d14       0xf1 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
                                 0x295 (size before relaxing)
- .debug_str     0x00000e12       0xb7 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x00000e05       0xb7 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
                                 0x28b (size before relaxing)
- .debug_str     0x00000ec9       0xd8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+ .debug_str     0x00000ebc       0xd8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
                                 0x3eb (size before relaxing)
- .debug_str     0x00000fa1      0x4e3 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+ .debug_str     0x00000f94      0x4e3 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
                                 0xb61 (size before relaxing)
- .debug_str     0x00001484       0x70 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
+ .debug_str     0x00001477       0x70 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Startup/startup_stm32l476rgtx.s.obj
                                  0xbf (size before relaxing)
- .debug_str     0x000014f4      0x448 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+ .debug_str     0x000014e7      0x448 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
                                 0x66b (size before relaxing)
- .debug_str     0x0000193c      0x106 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+ .debug_str     0x0000192f      0x106 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
                                 0x9c0 (size before relaxing)
- .debug_str     0x00001a42      0x1e5 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
-                                0x3f4 (size before relaxing)
- .debug_str     0x00001c27       0x81 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+ .debug_str     0x00001a35      0x1e6 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+                                0x3f5 (size before relaxing)
+ .debug_str     0x00001c1b       0x81 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
                                 0x8ae (size before relaxing)
- .debug_str     0x00001ca8      0xa1f CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_str     0x00001c9c      0xa1f CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
                                 0xdc0 (size before relaxing)
- .debug_str     0x000026c7      0x4dc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_str     0x000026bb      0x4dc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
                                 0xc86 (size before relaxing)
- .debug_str     0x00002ba3      0x159 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_str     0x00002b97      0x159 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
                                 0x5a6 (size before relaxing)
- .debug_str     0x00002cfc      0x5af CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_str     0x00002cf0      0x5af CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
                                 0x8b5 (size before relaxing)
- .debug_str     0x000032ab      0x20a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_str     0x0000329f      0x20a CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
                                 0x902 (size before relaxing)
- .debug_str     0x000034b5      0x331 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_str     0x000034a9      0x331 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
                                 0xb21 (size before relaxing)
- .debug_str     0x000037e6      0x5bf CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+ .debug_str     0x000037da      0x5bf CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
                                 0xc47 (size before relaxing)
- .debug_str     0x00003da5      0x7dc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+ .debug_str     0x00003d99      0x7dc CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
                                0x107a (size before relaxing)
- .debug_str     0x00004581      0x12b CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+ .debug_str     0x00004575      0x12b CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
                                 0x3e3 (size before relaxing)
- .debug_str     0x000046ac       0x9e CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+ .debug_str     0x000046a0       0x9e CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
                                 0x352 (size before relaxing)
- .debug_str     0x0000474a       0x8c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+ .debug_str     0x0000473e       0x8c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
                                 0x30e (size before relaxing)
- .debug_str     0x000047d6      0x3fa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .debug_str     0x000047ca      0x3fa CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
                                 0x884 (size before relaxing)
- .debug_str     0x00004bd0       0xcb CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+ .debug_str     0x00004bc4       0xcb CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
                                 0x35f (size before relaxing)
 
 .comment        0x00000000       0x49
@@ -2374,68 +2368,68 @@ LOAD c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.
  .comment       0x00000049       0x4a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
  .comment       0x00000049       0x4a CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
 
-.debug_frame    0x00000000     0x2ef4
+.debug_frame    0x00000000     0x2ed4
  .debug_frame   0x00000000       0x2c CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/gpio.c.obj
- .debug_frame   0x0000002c       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x000000ac       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
- .debug_frame   0x0000013c       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
- .debug_frame   0x00000164       0xa8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
- .debug_frame   0x0000020c       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
- .debug_frame   0x00000234       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
- .debug_frame   0x00000264       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
- .debug_frame   0x000002c8      0x3e4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
- .debug_frame   0x000006ac      0x178 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
- .debug_frame   0x00000824      0x18c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
- .debug_frame   0x000009b0       0x94 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
- .debug_frame   0x00000a44      0x274 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_frame   0x00000cb8      0x148 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_frame   0x00000e00       0xd0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_frame   0x00000ed0      0x2b8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_frame   0x00001188      0x19c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_frame   0x00001324      0x204 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_frame   0x00001528      0x5f8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
- .debug_frame   0x00001b20      0x600 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
- .debug_frame   0x00002120       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
- .debug_frame   0x00002158       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
- .debug_frame   0x000021d8       0xa0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
- .debug_frame   0x00002278      0x7cc CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .debug_frame   0x00002a44       0x7c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
- .debug_frame   0x00002ac0       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00002aec       0x34 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00002b20       0x20 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
- .debug_frame   0x00002b40       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
- .debug_frame   0x00002b6c       0x30 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
- .debug_frame   0x00002b9c       0x4c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
- .debug_frame   0x00002be8       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
- .debug_frame   0x00002c14       0x30 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
- .debug_frame   0x00002c44       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
- .debug_frame   0x00002c70       0x5c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x00002ccc       0x20 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
- .debug_frame   0x00002cec       0x34 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
- .debug_frame   0x00002d20       0x8c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
- .debug_frame   0x00002dac       0xb0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
- .debug_frame   0x00002e5c       0x64 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reent.o)
- .debug_frame   0x00002ec0       0x34 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x0000002c       0x60 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x0000008c       0x90 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+ .debug_frame   0x0000011c       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_hal_msp.c.obj
+ .debug_frame   0x00000144       0xa8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/stm32l4xx_it.c.obj
+ .debug_frame   0x000001ec       0x28 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+ .debug_frame   0x00000214       0x30 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+ .debug_frame   0x00000244       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+ .debug_frame   0x000002a8      0x3e4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+ .debug_frame   0x0000068c      0x178 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+ .debug_frame   0x00000804      0x18c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+ .debug_frame   0x00000990       0x94 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+ .debug_frame   0x00000a24      0x274 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_frame   0x00000c98      0x148 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_frame   0x00000de0       0xd0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_frame   0x00000eb0      0x2b8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_frame   0x00001168      0x19c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_frame   0x00001304      0x204 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_frame   0x00001508      0x5f8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+ .debug_frame   0x00001b00      0x600 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+ .debug_frame   0x00002100       0x38 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/App/fatfs.c.obj
+ .debug_frame   0x00002138       0x80 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+ .debug_frame   0x000021b8       0xa0 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+ .debug_frame   0x00002258      0x7cc CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .debug_frame   0x00002a24       0x7c CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+ .debug_frame   0x00002aa0       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00002acc       0x34 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00002b00       0x20 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
+ .debug_frame   0x00002b20       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+ .debug_frame   0x00002b4c       0x30 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
+ .debug_frame   0x00002b7c       0x4c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x00002bc8       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+ .debug_frame   0x00002bf4       0x30 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
+ .debug_frame   0x00002c24       0x2c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x00002c50       0x5c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00002cac       0x20 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x00002ccc       0x34 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+ .debug_frame   0x00002d00       0x8c c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
+ .debug_frame   0x00002d8c       0xb0 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+ .debug_frame   0x00002e3c       0x64 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reent.o)
+ .debug_frame   0x00002ea0       0x34 c:/progra~1/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
 
-.debug_loc      0x00000000    0x12d81
- .debug_loc     0x00000000       0xbf CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
- .debug_loc     0x000000bf       0xbe CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
- .debug_loc     0x0000017d       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
- .debug_loc     0x000001e1      0x127 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
- .debug_loc     0x00000308       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
- .debug_loc     0x0000036c     0x1ca3 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
- .debug_loc     0x0000200f      0x12f CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
- .debug_loc     0x0000213e      0x870 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
- .debug_loc     0x000029ae       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
- .debug_loc     0x000029f6      0x1ef CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
- .debug_loc     0x00002be5      0x744 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
- .debug_loc     0x00003329      0x3da CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
- .debug_loc     0x00003703      0xb06 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
- .debug_loc     0x00004209      0x81c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
- .debug_loc     0x00004a25     0x1af9 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
- .debug_loc     0x0000651e     0x21e4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
- .debug_loc     0x00008702     0x4bd8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
- .debug_loc     0x0000d2da      0x340 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
- .debug_loc     0x0000d61a      0x283 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
- .debug_loc     0x0000d89d     0x523f CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
- .debug_loc     0x00012adc      0x2a5 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
+.debug_loc      0x00000000    0x12d8e
+ .debug_loc     0x00000000       0xcc CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/main.c.obj
+ .debug_loc     0x000000cc       0xbe CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/spi.c.obj
+ .debug_loc     0x0000018a       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/sysmem.c.obj
+ .debug_loc     0x000001ee      0x127 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/system_stm32l4xx.c.obj
+ .debug_loc     0x00000315       0x64 CMakeFiles/demo_SPI_SD_Card.elf.dir/Core/Src/usart.c.obj
+ .debug_loc     0x00000379     0x1ca3 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd.c.obj
+ .debug_loc     0x0000201c      0x12f CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/LCD_240_280/Src/lcd_interface.c.obj
+ .debug_loc     0x0000214b      0x870 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd.c.obj
+ .debug_loc     0x000029bb       0x48 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/SD_Driver/Src/sd_interface.c.obj
+ .debug_loc     0x00002a03      0x1ef CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj
+ .debug_loc     0x00002bf2      0x744 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj
+ .debug_loc     0x00003336      0x3da CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj
+ .debug_loc     0x00003710      0xb06 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj
+ .debug_loc     0x00004216      0x81c CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj
+ .debug_loc     0x00004a32     0x1af9 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj
+ .debug_loc     0x0000652b     0x21e4 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c.obj
+ .debug_loc     0x0000870f     0x4bd8 CMakeFiles/demo_SPI_SD_Card.elf.dir/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj
+ .debug_loc     0x0000d2e7      0x340 CMakeFiles/demo_SPI_SD_Card.elf.dir/FATFS/Target/user_diskio.c.obj
+ .debug_loc     0x0000d627      0x283 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj
+ .debug_loc     0x0000d8aa     0x523f CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj
+ .debug_loc     0x00012ae9      0x2a5 CMakeFiles/demo_SPI_SD_Card.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj

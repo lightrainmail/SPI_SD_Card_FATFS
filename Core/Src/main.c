@@ -59,22 +59,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void SD_TestFATFs(void) {
-    FATFS *fs;
-    FRESULT ret;
 
-    //apply malloc
-    fs = (FATFS *)malloc(sizeof(FATFS));
-
-
-    //mount SD device
-    ret = f_mount(fs,"0:",1);
-    if(ret) {
-        LCD_ShowString(30,0,"mount fail",BLACK,WHITE,16,1);
-    } else {
-        LCD_ShowString(30, 0, "mount OK", BLACK, WHITE, 16, 1);
-    }
-}
 /* USER CODE END 0 */
 
 /**
@@ -140,7 +125,18 @@ int main(void)
 
 //    uint8_t RxBuff[512];
 
-    SD_TestFATFs();
+    FATFS *fs;
+    FRESULT ret;
+    //apply malloc
+    fs = (FATFS *)malloc(sizeof(FATFS));
+
+    //mount SD device
+    ret = f_mount(fs,"0:",1);
+    if(ret) {
+        LCD_ShowString(30,0,"mount fail",BLACK,WHITE,16,1);
+    } else {
+        LCD_ShowString(30, 0, "mount OK", BLACK, WHITE, 16, 1);
+    }
 
     //open file
     FIL *fil;
@@ -167,7 +163,7 @@ int main(void)
 
     //write file
 //    uint16_t WriteCount;
-//    f_write(fil,"Light Rain",sizeof("Light Rain"),(UINT *)&WriteCount);
+//    f_write(fil,"Hello?",sizeof("Hello?"),(UINT *)&WriteCount);
 
     //close file
     f_close(fil);
