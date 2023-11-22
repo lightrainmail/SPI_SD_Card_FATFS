@@ -136,6 +136,48 @@ sd_interface.c是在移植SD驱动代码时唯一需要修改的地方
 
 
 
+还有一点需要注意
+
+在SD卡初始化时,为适应MMC卡要求,需要将SPI_CLK控制在400KHz以下,因此需要将SPI暂时使用较慢的初始化方式,SD初始化完成后,再使用快速的SPI
+
+```c
+uint8_t SD_Init(void) {
+    //上面有很多代码
+
+    //为适应MMC卡要求时钟 < 400KHz,暂用256分频
+    SD_SPI3_Init();
+
+    //下面有很多代码
+
+    return temp;
+}
+```
+
+其中的SD_SPI3_Init();函数我是这样写的,这个函数位于demo_SPI_SD_Card/Core/Src/spi.c中
+
+```c
+void SD_SPI3_Init(void) {
+    hspi3.Instance = SPI3;
+  hspi3.Init.Mode = SPI_MODE_MASTER;
+  hspi3.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi3.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi3.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi3.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi3.Init.NSS = SPI_NSS_SOFT;
+  hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;	//256分频,单片机主频80MHz,这样波特率为312.5KBit/s
+  hspi3.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi3.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi3.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi3.Init.CRCPolynomial = 7;
+  hspi3.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
+  hspi3.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  if (HAL_SPI_Init(&hspi3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+```
+
 **在lcd_interface.c中**
 
 有五个函数,你需要重构
